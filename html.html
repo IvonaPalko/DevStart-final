@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>DevStart - HTML</title>
@@ -32,9 +31,7 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
-
 <body>
-
   <div id="wrapper">
     <!-- start header -->
     <header>
@@ -87,7 +84,6 @@
       </div>
     </header>
     <!-- end header -->
-
     <section id="inner-headline">
       <div class="container">
         <div class="row">
@@ -100,6 +96,7 @@
       </div>
     </section>
 
+<!-- 1. Uvod u HTML-->
     <section id="content">
       <div class="container">
         <div class="row">
@@ -221,6 +218,7 @@
       </div>
     </section>
 
+<!-- 2. HTML tagovi-->
     <section id="content">
       <div class="container">
         <div class="row">
@@ -228,7 +226,7 @@
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3>2. HTML tagovi (oznake)</h3>
+                  <h3>2. HTML tagovi (elementi)</h3>
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -239,15 +237,15 @@
 
               <p>
                 Kao što je prikazano u izvorima navedenima iznad, HTML je skup oznaka koje definiraju izgled i prikaz sadržaja na web stranici.
-                HTML oznake, odnosno tagovi, su ono od čega je HTML sastavljen. Također, HTML je sastavljen još od elemenata i atributa, o čemu će biti riječi u sljedećem poglavlju.
-                HTML tagovi (oznake) su instrukcije za Internet preglednike o sadržaju pojedinog elementa.<br/>
-                Tagovi (oznake) se sastoje od uglatih zagrada između kojih se nalaze upustva za označivanje teksta.
+                HTML elementi, odnosno tagovi, su ono od čega je HTML sastavljen. Također, HTML je sastavljen još od elemenata i atributa, o čemu će biti riječi u sljedećem poglavlju.
+                HTML tagovi (elementi) su instrukcije za Internet preglednike o sadržaju pojedinog elementa.<br/>
+                Tagovi (elementi) se sastoje od uglatih zagrada između kojih se nalaze upustva za označivanje teksta.
                 Primjera radi:<br/><br/>
 
-                <h6>&lt;p&gt;Ovo je primjer koda paragrafa čiji bi se sadržaj prikazivao u pregledniku&lt;/p&gt;</h6>
+                <b>&lt;p&gt;Ovo je primjer koda paragrafa čiji bi se sadržaj prikazivao u pregledniku&lt;/p&gt;</b> <br><br>
 
-                U ovom primjeru, slovo p okruženo je uglatim zagradama koje predstavljaju oznaku paragrafa. Prva oznaka predstavlja početku oznaku i daje
-                do znanja pregledniku da prikaže sav tekst koji slijedi u obliku paragrafa. Oznaka /p u također uglatnim zagradama predstavlja krajnju oznaku te govori
+                U ovom primjeru, slovo <b>p</b> okruženo je uglatim zagradama koje predstavljaju oznaku paragrafa. Prva oznaka predstavlja početku oznaku i daje
+                do znanja pregledniku da prikaže sav tekst koji slijedi u obliku paragrafa. Oznaka <b>/p</b> u također uglatnim zagradama predstavlja krajnju oznaku te govori
                 pregledniku da je to kraj paragrafa (kosa crta označava kraj u HTML oznakama).
               </p>
 
@@ -348,13 +346,141 @@
       </div>
     </section>
 
-    <footer>
+<!-- 3. HTML atributi-->
+    <section id="content">
       <div class="container">
         <div class="row">
+          <div class="span8">
+            <article class="noborder">
+              <div class="top-wrapper">
+                <div class="post-heading">
+                  <h3>3. HTML atributi</h3>
+                </div>
+                <!-- start flexslider -->
+                <div class="portfolio-detail">
+                  <img src="img/works/full/image-01-full.jpg" alt="" />
+                </div>
+                <!-- end flexslider -->
+              </div>
+
+              <p>
+                HTML elementi mogu imati svoje atribute ili svojstva. Atributi služe kako bi pružili
+                dodatne informacije o pojedinom elementu. Oni obično imaju naziv i vrijednost, a
+                u samom kodu se ispisuju <b>naziv&#61;&ldquo;vrijednost&rdquo;</b> <br>
+                Atributi su načelno opcionalni, odnosno možemo ih koristiti međutim nije greška ukoliko
+                ih izostavimo. <br>
+                Na primjer, naslov pojedine stavke (npr. slike na web stranici) će se prikazati ukoliko
+                prinesemo miš na nju. Taj naslov je dodani atribut, koji nije morao postojati, a dodao se unutar elementa <b>img</b>
+                kao naslov (<b>title&#61;&ldquo;Naslov slike&rdquo;</b>).
+              </p>
+
+            </article>
+
+            <div class="row">
+              <div class="span8">
+                <h5>Poveznice na HTML atribute</h5>
+              </div>
+              <div class="grid related-works cs-style-3">
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>HTML Attributes Explained</h3>
+                        <p>
+                          <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
+                          <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/html-attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>HTML 4 Common Attributes</h3>
+                        <p>
+                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
+                          <a href="http://www.htmlhelp.com/reference/html40/attrs.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>HTML Attributes</h3>
+                        <p>
+                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
+                          <a href="https://html.com/attributes/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>HTML attribute reference</h3>
+                        <p>
+                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
+                          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="span4">
+            <aside class="right-sidebar">
+
+              <div class="widget">
+                <h5 class="widgetheading">Nešto više o atributima</h5>
+                <p>
+                  Pojedini elementi nisu upotrebljivi bez atributa koji ih pobliže određuje, kao naprimjer element <b>a</b>. On
+                  označava link (hipervezu) te se nije funkcionalan ukoliko mu se ne dodijeli atribut, što je u ovom slučaju
+                  <b>href</b> gdje se upisuje putanja na koju vodi.</br>
+                  Također, element <b>img</b> mora imati izvor (atribut <b>src</b>) odakle povlači sliku.
+                </p>
+              </div>
+
+              <div class="widget">
+                <h6 class="widgetheading">Pojašnjenje:</h6>
+                <ol class="folio-detail">
+                  <li><a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank"><label>&lt;a href&#61;&ldquo;URL&rdquo;&gt;</label></a></li>
+                  <li><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank"><label>&lt;img src&#61;&ldquo;putanja slike&rdquo;&gt;</label></a></li>
+                </ol>
+              </div>
+
+
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!--
+      <div class="container">
+
+        <div class="row">
+
           <div class="span4">
             <div class="widget">
               <div class="footer_logo">
-                <h3><a href="index.html"><i class="icon-tint"></i> Remember</a></h3>
+                <h3><a href="index.html">DevStart</a></h3>
               </div>
               <address>
 							  <strong>Remember company Inc.</strong><br>
@@ -367,6 +493,7 @@
               </p>
             </div>
           </div>
+
           <div class="span4">
             <div class="widget">
               <h5 class="widgetheading">Browse pages</h5>
@@ -381,17 +508,12 @@
 
             </div>
           </div>
-          <div class="span4">
-            <div class="widget">
-              <h5 class="widgetheading">From flickr</h5>
-              <div class="flickr_badge">
-                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
+
+
         </div>
+
       </div>
+      -->
       <div id="sub-footer">
         <div class="container">
           <div class="row">
@@ -417,7 +539,7 @@
         </div>
       </div>
     </footer>
-  </div>
+
   <a href="#" class="scrollup"><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i></a>
 
   <!-- javascript
