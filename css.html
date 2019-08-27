@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DevStart - HTML</title>
+  <title>DevStart - CSS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn HTML" />
+  <meta name="description" content="Learn CSS" />
   <meta name="author" content="Ivona Palko" />
 
   <!-- css -->
@@ -479,12 +479,8 @@
               </div>
 
               <p>
-                Kada se web stranica učita, Internet preglednik kreira DOM (Document Object Model). HTML DOM definira standard za pristup
-                i manipulaciju HTML dokumentima. DOM definira objekte i svojstva svih dokumentiranih elemenata, kao i metode
-                kojima im se pritupa.
-                Jednostavnije rečeno - HTML DOM je standard za načine kako dohvatiti, promijeniti,
-                dodati ili obrisati HTML elemente.
-                Nešto više o DOM-u u niže navedenim izvorima:
+                Kako ne bismo prolazili kroz sve CSS oznake jer ih je veoma mnogo, a jednom kada počnete raditi s njima postati će vam vrlo znane, ovdje ćemo
+                priložiti tek izvore sa popisom oznaka i potencijalnih vrijednosti.
               </p>
 
             </article>
@@ -575,10 +571,25 @@
                   </div>
 
                   <p>
-                    Za urednost teksta, kao i pisanog na papiru te u Wordu, važno je imati organizirane i strukturirane liste i na web stranicama.
-                    Liste su uglavnom kratke, numerirane ili imaju točke za nabrajanje te osiguravaju da dijelovi teksta budu brzo i lako uočljivi od stranice
-                    čitaoca. HTML nudi više vrsta listi, ali se dvije izdvajaju kao najbitnije: numerirana lista te lista za nabrajanje. Numerirane liste se još
-                    nazivaju i uređene liste, dok s liste sa znakovima za nabrajanje (nenumerirane) nazivaju i neuređenim listama.
+                    CSS boje se definiraju pomoću modela za opis boja RGB (engl. <i>Red, Green, Blue</i>), heksadecimalnog sistema ili po imenu (na engleskom).
+                  </p>
+                  <p>
+                    <strong>RGB</strong><br>
+                    Postoje dva načina rada sa RGB modelom:<br>
+                    <pre>
+    Prvi način je upisivanje postotka crvene, zelene i plave
+    color: rgb (39%, 58%, 93%);
+    a drugi način je direktno definiranje RGB vrijednosti boja
+    color: rgb (100, 149, 237);
+                    </pre>
+                    <strong>Heksadecimalni sistem</strong><br>
+                    <pre>
+    color: #6495ED;
+                    </pre>
+                    <strong>Korištenje imena boje</strong><br>
+                    <pre>
+    color: cornflowerblue;
+                    </pre>
                   </p>
 
                 </article>
@@ -633,7 +644,21 @@
 
               </div>
 
+              <div class="span4">
+                <aside class="right-sidebar">
 
+                  <div class="widget">
+                    <h6 class="widgetheading">Alati za traženje boje</h6>
+                    <ol class="folio-detail">
+                      <li><a href="" target="_blank"><label>RBG</label></a></li>
+                      <li><a href="" target="_blank"><label>Heksadecimalni model</label></a></li>
+                      <li><a href="" target="_blank"><label>Imena boja</label></a></li>
+                    </ol>
+                  </div>
+
+
+                </aside>
+              </div>
             </div>
           </div>
         </section>
@@ -656,16 +681,18 @@
                   </div>
 
                   <p>
-                    Hiperveza (URL) predstavlja skup instrukcija koje treba napraviti kako bi se izvršili zahtjevi određenog izvora.
-                    Sadrže određene adrese pomoću kojih se pronalaze dokumenti, videi, audio datoteke, tekstovi te objekti iz svih krajeva svijeta. Hiperveze dozvoljavaju
-                    da skačete a jedne na drugu stavku i da vidite izvore na toj adresu, pri čemu nije važno gdje se nalazite.
-                    Opći naziv za ove adrese je URL, odnosno engl. <i>Uniform Resource Locators</i>. Svaka web stranica na svijetu, svaki izvor na mreži, bilo da se radi o
-                    mješavini teksta i multimedije ili grafike, ima svoju jedinstvenu URL adresu, koja predstavlja strogo definiranu adresu pojedinog web izvora.<br>
-                    Element za hipervezu je <b>&lt;a&gt; &lt;/a&gt;</b> koji sadrži obavezni atribut <b>href</b>.<br><br>
-
-                    Upisivanje u alatu za uređivanje koda bi bilo sljedeće: <strong>&lt;a href&#61;&ldquo;www.DevStart.com&rdquo;&gt;<u>DevStart</u>&lt;/a&gt;</strong>
-
+                    Fontovi koji se koriste na web stranici trebaju se nalaziti u većini operativnih sustava. Ukoliko korisnikov operativni sustav nema instaliran font
+                    koji web stranica definira, preglednik će prikazati korisnikov skup standardnih fontova, što predstavlja problem zbog potrošenog vremena u kreiranje
+                    ili odabir fonta kojeg korisnik na kraju neće vidjeti.
                   </p>
+                  <pre>
+  font-family  definira obitelj fontova koja će se koristiti (može biti određeno ime ili opći naziv
+               obitelji)
+  font-style   definira stil fonta koji može biti normalan, kurziv ili ukošen
+  font-weight  definira debljinu fonta
+  font-size    definira veličinu fonta
+  font         postavlja obitelj, stil, debljinu i veličinu fonta jednom deklaracijom
+                  </pre>
 
                 </article>
 
@@ -725,17 +752,15 @@
 
                   <div class="widget">
                     <h5 class="widgetheading">Dodatno:</h5>
-                    <p>Upoznati smo sa činjenicom da nije dobro ukoliko korisnik dođe na naš web te klikne na link koji ga odmah vodi na neku drugu web stranicu,
-                      dok mi ostajemo bez korisnika. Kako bi se to izbjeglo, moguće je dodati  <b>taget&#61;&ldquo;_blank&rdquo;</b> atribut i vrijednost i time
-                      usmjeriti web stranicu u novootvorenu karticu, bez zatvaranja našeg weba.
+                    <p>
                     </p>
                   </div>
 
                   <div class="widget">
-                    <h6 class="widgetheading">Vrste putanja/hiperveza:</h6>
+                    <h6 class="widgetheading">Linkovi za pretragu fontova:</h6>
                     <ol class="folio-detail">
-                      <li><a href="https://www.youtube.com/watch?v=ephId3mYu9o" target="_blank"><label>Apsolutna i relativna putanja (YT video)</label></a></li>
-                      <li><a href="https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/" target="_blank"><label>Apsolutna vs. relativna putanja</label></a></li>
+                      <li><a href="" target="_blank"><label>Google fonts</label></a></li>
+                      <li><a href="" target="_blank"><label>Smth</label></a></li>
                     </ol>
                   </div>
 
@@ -763,19 +788,50 @@
                   </div>
 
                   <p>
-                    Kako bismo dali uputu pregledniku da prikaže sliku, potrebno je osigurati dvije stvari. Prvo, potrebna je slika koju želimo prikazati, što se radi pomoću
-                    atributa <b>src</b> oznake <b>&lt;img&gt;</b>. Da bi se slika prikazala, vrijednost mora biti ispravna URL adresa, apsolutna ili relativna. Druga potrebna stvar jeste mjesto
-                    na web stranici gdje će slika biti smještena, što se također radi pomoću postavljanja elementa <b>&lt;img&gt;</b>.
+                    Svaki element sam po sebi ima određeno poravnanje, dok se ono može (i treba) dodatno uređivati prema pravilima koja postavimo za web stranicu koju kreiramo.
+                    Termin <b>model okvira</b> (engl. <i>box</i>) u CSS-u predstavlja model u kojem se postavljaju elementi na web stranici kao polja sastavljena od rubova, margina i razmaka od
+                    rubova elemenata. Određeni elementi se mogu precizno postaviti na željenu stranu i tako napraviti logičan, prirodan slijed sadržaja.
                   </p>
                   <p>
-                    Oznaka <b>&lt;img&gt;</b> nije element nego vrijedi kao samostalna oznaka, što znači da nema krajnje crte, niti oznake koja zatvara za blok. Umjesto toga se koristi kosa
-                    crta na samom kraju te iste oznake:<br>
+                    Interna udaljenost elemenata, tj. razmak između sadržaja elementa i njegovih rubova postavlja se pomoću CCS svojstva <b>padding</b>. Kako biste postavili
+                    udaljenost od rubova, potrebno je da se definira gornji, donji, lijevi i desni razmak u vidu izdvojenih deklaracija:
+                    <pre>
+      p {
+        padding-top: 2px;       definira udaljenost od gornjeg ruba elementa
+        padding-bottom: 3px;    definira udaljenost od donjeg ruba elementa
+        padding-left: 3px;      definira udaljenost od lijevog ruba elementa
+        padding-right: 4px;     definira udaljenost od desnog ruba elementa
+      }
 
-                    <strong>&lt;img src&#61;&ldquo;URL ili putanja slike&rdquo; alt&#61;&ldquo;Naziv slike&rdquo;/&gt;</strong>
+      ili kroz pojedinačnu deklaraciju:
+
+      p {padding: 2px 3px 3px 4px;}
+                    </pre>
+                  </p>
+
+                  <p>
+                    Nadalje, kako bismo koristili razmak između elemenata koristi se <b>margina</b>. Ona služi za definiranje prostora između rubova elemenata
+                    koju niti jedan drugi element ne smije dodirivati ili prelaziti preko njega. Na primjer, ukoliko dva elementa imaju marginu od 5px, ukupan razmak između ta dva elementa
+                    biti će 10px. <br>
+                    Kao i kod paddinga, elementi imaju desnu, lijevu, gornju i donju marginu te se mogu definirati kao odvojeno ili kao jedna deklaracija. Širina margine može biti dužina (u pikselima),
+                    postotak ili automatski postavljena.
+                    <pre>
+      p {
+        margin-top: 2px;       definira gornju marginu elementa
+        margin-bottom: 3px;    definira donju marginu elementa
+        margin-left: 3px;      definira lijevu marginu elementa
+        margin-right: 4px;     definira desnu marginu elementa
+      }
+
+      ili kroz pojedinačnu deklaraciju:
+
+      p {margin: 2px 3px 3px 4px;}
+                    </pre>
+
                   </p>
 
                 </article>
-<!--
+
                 <div class="row">
                   <div class="grid related-works cs-style-3">
                     <div class="span2">
@@ -837,18 +893,17 @@
 
                   </div>
                 </div>
--->
+
               </div>
 
               <div class="span4">
                 <aside class="right-sidebar">
 
                   <div class="widget">
-                    <h6 class="widgetheading">Vrste slika:</h6>
+                    <h6 class="widgetheading">Postoji još i :</h6>
                     <ol class="folio-detail">
-                      <li><a href="" target="_blank"><label>JPEG</label></a></li>
-                      <li><a href="" target="_blank"><label>GIF</label></a></li>
-                      <li><a href="" target="_blank"><label>PNG</label></a></li>
+                      <li><a href="" target="_blank"><label>Postavljanje apsolutne širine i visine</label></a></li>
+                      <li><a href="" target="_blank"><label>Postavljanje relativne širine i visine</label></a></li>
                     </ol>
                   </div>
                 </aside>
@@ -882,7 +937,6 @@
                   </p>
 
                 </article>
-<!--
                 <div class="row">
                   <div class="grid related-works cs-style-3">
                     <div class="span2">
@@ -944,7 +998,6 @@
 
                   </div>
                 </div>
--->
               </div>
 
               <div class="span4">

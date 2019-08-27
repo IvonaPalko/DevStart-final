@@ -65,7 +65,9 @@
                     <li class="dropdown">
                       <a href="#">Frontend <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a href="html.html">HTML</a></li>
+                          <li><a href="html.html">HTML</a></li>
+                          <li><a href="css.html">CSS</a></li>
+                          <li><a href="js.html">JavaScript</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
@@ -130,13 +132,13 @@
                 PHP je programski skriptni jezik poslužitelja i moćan alat za izradu dinamičnih i interaktivnih web stranica.
 
 				PHP je široko korištena, besplatna i učinkovita alternativa konkurentima kao što je Microsoftov ASP. <br>
-				
+
 				Prije nastavka trebali biste imati osnovno razumijevanje sljedećeg:
 
 <ul><li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li></ul>
-				
+
 				PHP je akronim za "PHP: Hypertext Preprocessor".
 To je široko korišten skriptni jezik otvorenog koda.
 PHP skripte se izvršavaju na poslužitelju.
@@ -158,7 +160,7 @@ Sa PHP-om niste ograničeni na izlazni HTML. Možete reproducirati slike, PDF da
 				<li>PHP podržava širok raspon baza podataka</li>
 				<li>PHP je besplatan</li>
 				<li>PHP je jednostavan za naučiti i učinkovito radi na strani poslužitelja</li>
-				
+
 				</ul>
 				<b>Instalacija PHP-a </b> <br>
 				Da biste započeli koristiti PHP, možete:
@@ -178,14 +180,14 @@ instalirati web poslužitelj<br>
 instalirati PHP<br>
 instalirati bazu podataka, kao što je MySQL<br>
 <a href="http://php.net/manual/en/install.php"><b>Službena web stranica PHP-a (PHP.net)</b></a> sadrži upute za instalaciju PHP-a.
-				
-				
+
+
               </p>
 
             </article>
 
             <div class="row">
-              
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
@@ -194,7 +196,7 @@ instalirati bazu podataka, kao što je MySQL<br>
                       <figcaption>
                         <h3>PHP Službene stranice</h3>
                         <p>
-                          
+
                           <a href="https://www.php.net"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -208,7 +210,7 @@ instalirati bazu podataka, kao što je MySQL<br>
                       <figcaption>
                         <h3>Nauči PHP</h3>
                         <p>
-                          
+
                           <a href="https://www.learn-php.org"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -222,7 +224,7 @@ instalirati bazu podataka, kao što je MySQL<br>
                       <figcaption>
                         <h3>Coursera: "Learn PHP"</h3>
                         <p>
-                          
+
                           <a href="https://www.coursera.org/lecture/web-applications-php/php-basics-UhOlH"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -236,7 +238,7 @@ instalirati bazu podataka, kao što je MySQL<br>
                       <figcaption>
                         <h3>Uvod u PHP: video</h3>
                         <p>
-                          
+
                           <a href="https://www.youtube.com/watch?v=qVU3V0A05k8"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -273,11 +275,11 @@ instalirati bazu podataka, kao što je MySQL<br>
         </div>
       </div>
     </section>
-	
-	
+
+
 	<!-- DRUGI ČLANAK-->
-	
-	
+
+
 	<section id="content">
       <div class="container">
         <div class="row">
@@ -295,13 +297,13 @@ instalirati bazu podataka, kao što je MySQL<br>
               </div>
 
               <p>
-                Kad PHP analizira datoteku, traži otvaranje i zatvaranje oznaka, koje su <? Php i ?> 
-				Koje govore PHP-u da započne i zaustavi interpretaciju koda između njih. 
+                Kad PHP analizira datoteku, traži otvaranje i zatvaranje oznaka, koje su <? Php i ?>
+				Koje govore PHP-u da započne i zaustavi interpretaciju koda između njih.
 				Parsiranje na ovaj način omogućuje PHP ugrađivanje u sve vrste različitih dokumenata, jer PHP parser zanemaruje sve izvan para oznaka otvaranja i zatvaranja.
 
 
-Ako datoteka sadrži samo PHP kôd, poželjno je izostaviti PHP završnu oznaku na kraju datoteke. 
-To sprječava da se slučajno izostavi prostor ili dodaju nove linije nakon PHP oznake zatvaranja, što može 
+Ako datoteka sadrži samo PHP kôd, poželjno je izostaviti PHP završnu oznaku na kraju datoteke.
+To sprječava da se slučajno izostavi prostor ili dodaju nove linije nakon PHP oznake zatvaranja, što može
 prouzrokovati neželjene efekte, jer PHP će pokrenuti izlazni međuspremnik kada programer nema namjeru poslati bilo koji izlaz u toj točki skripte.
 
 				<br>
@@ -329,24 +331,24 @@ echo "Hello World!";
 
 < /body >
 < /html >
-	</pre>			
-			
+	</pre>
+
 U PHP-u, ključne riječi (npr. if, else, while, echo, itd.), klase, funkcije i korisnički definirane funkcije razlikuju velika i mala slova.
 
-PHP interpreter ignorira sve izvan oznaka za 
+PHP interpreter ignorira sve izvan oznaka za
 otvaranje i zatvaranje koje u PHP datotekama imaju miješan sadržaj. To omogućava da se PHP ugradi u HTML dokumente.
 
-Kada PHP interpreter pogodi oznake ?> zatvaranja, jednostavno počinje ispuštati sve što nađe dok ne vidi drugu početnu oznaku (osim 
+Kada PHP interpreter pogodi oznake ?> zatvaranja, jednostavno počinje ispuštati sve što nađe dok ne vidi drugu početnu oznaku (osim
 ako je usred uvjetne izjave, u tom slučaju tumač će odrediti ishod uvjeta prije donošenja odluke što će preskočiti).
 
-PHP zahtijeva da se upute na kraju svake izjave završe točka-zarez znakom. Završna oznaka bloka PHP koda automatski podrazumijeva točku-zarez; 
-Ne trebate imati ; ako završava zadnji redak PHP bloka. 		
+PHP zahtijeva da se upute na kraju svake izjave završe točka-zarez znakom. Završna oznaka bloka PHP koda automatski podrazumijeva točku-zarez;
+Ne trebate imati ; ako završava zadnji redak PHP bloka.
               </p>
 
             </article>
 
             <div class="row">
-              
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
@@ -355,7 +357,7 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
                       <figcaption>
                         <h3>PHP sintaksa</h3>
                         <p>
-                          
+
                           <a href="https://www.geeksforgeeks.org/php-basic-syntax/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -369,15 +371,15 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
                       <figcaption>
                         <h3>Sintaksa: Video</h3>
                         <p>
-                          
+
                           <a href="https://www.youtube.com/watch?v=abUuRqYUUaY"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                
-                
+
+
               </div>
             </div>
 
@@ -386,8 +388,8 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
           <div class="span4">
             <aside class="right-sidebar">
               <div class="widget">
-                
-                
+
+
 
               </div>
            <!--   <div class="widget">
@@ -402,9 +404,9 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
         </div>
       </div>
     </section>
-	
+
 	<!-- TREĆI ČLANAK-->
-	
+
 	<section id="content">
       <div class="container">
         <div class="row">
@@ -422,29 +424,29 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
               </div>
 
               <p>
-                Varijable u PHP-u predstavljene su znakom dolara, 
+                Varijable u PHP-u predstavljene su znakom dolara,
 				a slijedi ime varijable. Naziv varijable razlikuje velika i mala slova.
 
-Imena varijabli slijede ista pravila kao i ostale oznake u PHP-u. 
+Imena varijabli slijede ista pravila kao i ostale oznake u PHP-u.
 Važeće ime varijable započinje slovom ili podvlakom, nakon čega slijedi bilo koji broj slova, brojeva ili podvlaka.
  <pre>
- 
+
  < ? php
 $var = 'jabuka';
 $Var = 'banana';
-echo "$var, $Var";      
+echo "$var, $Var";
 
-$4site = 'kruška';     
-$_4site = 'jagoda';    
-$täyte = 'lubenica';    
+$4site = 'kruška';
+$_4site = 'jagoda';
+$täyte = 'lubenica';
 ? >
 
-</pre> 
+</pre>
 
-Prema zadanim postavkama, varijable su uvijek dodijeljene po vrijednosti. To jest, kad dodijelite izraz varijabli, 
-cijela se vrijednost izvornog izraza kopira u odredišnu varijablu. 
+Prema zadanim postavkama, varijable su uvijek dodijeljene po vrijednosti. To jest, kad dodijelite izraz varijabli,
+cijela se vrijednost izvornog izraza kopira u odredišnu varijablu.
 To, primjerice, znači da nakon dodjeljivanja vrijednosti jedne varijable drugoj, promjena jedne od tih varijabli neće imati utjecaja na drugu.
-PHP nudi i drugi način dodjeljivanja vrijednosti varijablama: dodijeliti referencom. To znači da nova varijabla jednostavno upućuje 
+PHP nudi i drugi način dodjeljivanja vrijednosti varijablama: dodijeliti referencom. To znači da nova varijabla jednostavno upućuje
 na izvornu varijablu. Promjene nove varijable utječu na izvornike i obrnuto.
 
 <br> <br>Pravila za PHP varijable:<br>
@@ -459,29 +461,29 @@ U PHP-u, varijable se mogu deklarirati bilo gdje u skripti.
 
 Opseg varijable je dio skripte u kojem se varijabla može uputiti / koristiti.
 <br><br>
-PHP ima tri različita opsega varijabli:<br> 
+PHP ima tri različita opsega varijabli:<br>
 <ul><li>
 lokalno</li>
 <li>globalno</li>
 <li>statički</li> <br><br>
 					<pre>
 < ? php
-$a = 1; /* globalno */ 
+$a = 1; /* globalno */
 
 function test()
-{ 
-    echo $a; /* lokalno */ 
-} 
+{
+    echo $a; /* lokalno */
+}
 
 test();
 ? > </pre>
-				
+
               </p>
 
             </article>
 
             <div class="row">
-              
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
@@ -490,7 +492,7 @@ test();
                       <figcaption>
                         <h3>Varijable</h3>
                         <p>
-                          
+
                           <a href="https://www.php.net/manual/en/language.variables.php"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -504,15 +506,15 @@ test();
                       <figcaption>
                         <h3>Varijable: Video</h3>
                         <p>
-                          
+
                           <a href="https://www.youtube.com/watch?v=wuWAK0guilk"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                
-                
+
+
               </div>
             </div>
 
@@ -521,8 +523,8 @@ test();
           <div class="span4">
             <aside class="right-sidebar">
               <div class="widget">
-                
-                
+
+
 
               </div>
            <!--   <div class="widget">
@@ -537,9 +539,9 @@ test();
         </div>
       </div>
     </section>
-	
+
 	<!-- ČETVRTI ČLANAK-->
-	
+
 	<section id="content">
       <div class="container">
         <div class="row">
@@ -579,12 +581,12 @@ String je niz znakova, poput "Hello world!".
 
 String može biti bilo koji tekst unutar citata. Možete koristiti jednostruke ili dvostruke navodnike.
 <pre>
-< ? php 
+< ? php
 $x = "Hello world!";
 $y = 'Hello world!';
 
 echo $x;
-echo "< br >"; 
+echo "< br >";
 echo $y;
 ? >
 </pre>
@@ -602,9 +604,9 @@ Integer mora imati najmanje jednu znamenku</li>
 <li>Integer se može odrediti u tri formata: decimalni (10-baziran), šesterokutni (16-baziran - s prefiksom 0x) ili oktalni (8-baziran - s prefiksom 0)</li>
 </ul>
  PHP var_dump () funkcija vraća vrstu i vrijednost podataka
- 
+
 <pre>
-< ? php 
+< ? php
 $x = 5985;
 var_dump($x);
 ? >
@@ -617,7 +619,7 @@ Float je broj s decimalnom točkom.
 
 U sljedećem primjeru $ x je float. PHP var_dump () funkcija vraća vrstu i vrijednost podataka
 <pre>
-< ? php 
+< ? php
 $x = 10.365;
 var_dump($x);
 ? >
@@ -626,7 +628,7 @@ var_dump($x);
 <br>
 <br>
 <h4>Boolean</h4>
-Boolean predstavlja dva moguća stanja: TRUE ili FALSE. 
+Boolean predstavlja dva moguća stanja: TRUE ili FALSE.
 
 <pre>
 $ x = true;
@@ -641,7 +643,7 @@ Array ili niz pohranjuje više vrijednosti u jednu jedinicu.
 U sljedećem primjeru $ gradovi je niz. PHP var_dump () funkcija vraća vrstu i vrijednost podataka:
 
 <pre>
-< ? php 
+< ? php
 $gradovi = array("Zagreb","Rijeka","Osijek");
 var_dump($gradovi);
 ? >
@@ -698,13 +700,13 @@ var_dump($x);
 Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse izvan PHP-a.
 
 Čest primjer korištenja vrste podataka resursa je poziv iz baze podataka.
-			
+
               </p>
 
             </article>
 
             <div class="row">
-              
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
@@ -713,7 +715,7 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
                       <figcaption>
                         <h3>Tipovi podataka</h3>
                         <p>
-                          
+
                           <a href="https://www.tutorialrepublic.com/php-tutorial/php-data-types.php"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -727,16 +729,16 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
                       <figcaption>
                         <h3>Tipovi podataka: Video</h3>
                         <p>
-                          
+
                           <a href="https://www.youtube.com/watch?v=LajMQLWXQlo"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-				
-                
-                
+
+
+
               </div>
             </div>
 
@@ -745,8 +747,8 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
           <div class="span4">
             <aside class="right-sidebar">
               <div class="widget">
-                
-                
+
+
 
               </div>
            <!--   <div class="widget">
@@ -761,9 +763,9 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
         </div>
       </div>
     </section>
-	
+
 	<!-- PETI ČLANAK-->
-	
+
 	<section id="content">
       <div class="container">
         <div class="row">
@@ -781,7 +783,7 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
               </div>
 
               <p>
-               Nizovi se koriste za pohranjivanje više vrijednosti u jednu varijablu. 
+               Nizovi se koriste za pohranjivanje više vrijednosti u jednu varijablu.
 			   <pre>
 < ? php
 $gradovi = array("Zagreb", "Osijek", "Rijeka");
@@ -865,7 +867,7 @@ foreach($dob as $x => $x_value) {
 <h4>Višedimenzionalni niz</h4>
 Višedimenzionalni niz je niz koji sadrži jedan ili više nizova.
 
-PHP razumije višedimenzionalne nizove duboke dvije, tri, četiri, 
+PHP razumije višedimenzionalne nizove duboke dvije, tri, četiri,
 pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi većini ljudi.
 
               </p>
@@ -873,7 +875,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
             </article>
 
             <div class="row">
-              
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
@@ -882,7 +884,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                       <figcaption>
                         <h3>Indeksirani niz</h3>
                         <p>
-                          
+
                           <a href="https://www.geeksforgeeks.org/php-arrays/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -896,7 +898,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                       <figcaption>
                         <h3>Asocijativi niz</h3>
                         <p>
-                          
+
                           <a href="https://www.geeksforgeeks.org/associative-arrays-in-php/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -910,7 +912,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                       <figcaption>
                         <h3>Višedimenzionalni niz</h3>
                         <p>
-                          
+
                           <a href="https://www.w3schools.com/php/php_arrays_multi.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
@@ -924,16 +926,16 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                       <figcaption>
                         <h3>PHP nizovi: video</h3>
                         <p>
-                          
+
                           <a href="https://www.youtube.com/watch?v=xRGsm1z1nLU"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-				
-                
-                
+
+
+
               </div>
             </div>
 
@@ -942,8 +944,8 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
           <div class="span4">
             <aside class="right-sidebar">
               <div class="widget">
-                
-                
+
+
 
               </div>
            <!--   <div class="widget">
@@ -958,10 +960,10 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
         </div>
       </div>
     </section>
-	
-	
-	
-	
+
+
+
+
 
 
     <footer>
@@ -973,18 +975,18 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                 <h3><a href="index.html"><i class="icon-tint"></i> Iveniv</a></h3>
               </div>
               <address>
-							  
+
   						</address>
               <p>
-                
+
                 <i class="icon-envelope-alt"></i> eeskic@ffos.hr<br>
 				<i class="icon-envelope-alt"></i> ipalko@ffos.hr<br>
 				<i class="icon-envelope-alt"></i> icosic2@ffos.hr<br>
               </p>
             </div>
           </div>
-          
-          
+
+
         </div>
       </div>
       <div id="sub-footer">
