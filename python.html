@@ -151,8 +151,8 @@
 				</ul>
 				<b>Instalacija Pythona </b> <br>
 				Na nekim računalima Python je već instaliran. Da biste provjerili imate li instaliran Pyhton na Windows računalu, potražite Pyhton na početnoj traci ili upišite sljedeće
-				u naredbeni redak (cmd.exe): <hr>
-				<i>C:\Users\Vaše ime>python --version</i><hr>
+				u naredbeni redak (cmd.exe):
+				<pre>C:\Users\Vaše ime>python --version</pre>
 
 				U slučaju da je potrebno instalirati Python na računalo, pratite korake na
 				<a href="https://www.python.org/"><b>linku.</b></a>
@@ -275,14 +275,14 @@
 				to znači da kao programer pišete datoteke Python (.py) u uređivačima teksta i zatim te datoteke stavljate u tumač pythona koji će se izvršiti.
 			Način pokretanja python datoteke u naredbenom retku:
 
-				<hr>C:\Users\Your Name>python helloworld.py <hr>
+				<pre>C:\Users\Your Name>python helloworld.py </pre>
 
 				Gdje je "helloworld.py" ime vaše python datoteke.
 
 Kreirajte vašu prvu python datoteku, zvanu helloworld.py, koja se može napisati u bilo kojem uređivaču teksta.
-<hr> print("Hello, World!") <hr>
+<pre> print("Hello, World!") </pre>
 Nakon toga, spremite datoteku, otvorite naredbeni redak, pomaknite se do direktorija u koji ste spremili datoteku i pokrenite:
-<hr>C:\Users\Your Name>python helloworld.py<hr>
+<pre>C:\Users\Your Name>python helloworld.py</pre>
 izlaz bi trebao glasiti <b> Hello World </b>. <br>
 
 
@@ -378,8 +378,9 @@ Kako biste napustili sučelje naredbenog retka python, jednostavno unesite <b> e
 
  u drugim programskim jezicima uvlačenje u kodu služi kako bi kod bio čitljiv, dok je uvlačenje u Pythonu vrlo važno.
 
-Python koristi uvlačenje za označavanje bloka koda. <hr> if 5 > 2:<br>
-        _______print("Pet je veće od dva!")<hr>
+Python koristi uvlačenje za označavanje bloka koda.
+<pre> if 5 > 2:
+       print("Pet je veće od dva!")</pre>
 Python će vam javiti grešku ukoliko preskočite uvlačenje (gore označeno). Broj uvlačenja (razmaka) ovisi o programeru, ali mora biti barem jedan.
 Morate koristiti isti broj razmaka u istom bloku koda, u protivnom će vam Python javiti grešku.
 
@@ -470,21 +471,23 @@ Morate koristiti isti broj razmaka u istom bloku koda, u protivnom će vam Pytho
 				Za razliku od ostalih programskih jezika, Python nema naredbu za proglašavanje varijable.
 
 				Varijabla se kreira u trenutku kada joj prvi put dodijelite vrijednost.
-					<hr>
-					x = 5<br>
-y = "Banana"<br>
-print(x)<br>
-print(y)<hr>
+					<pre>
+x = 5
+y = "Banana"
+print(x)
+print(y)</pre>
 
 Varijable se ne moraju deklarirati određenim tipom, a mogu čak i promijeniti tip nakon što su postavljene.
-<hr>x = 4 # x je sada tip int<br>
-x = "Jabuka" # x je sad tip str<br>
-print(x)<hr>
+<pre>x = 4 # x je sada tip int
+x = "Jabuka" # x je sad tip str
+print(x)</pre>
 <br>
-Varijable String mogu se deklarirati ili korištenjem jednostrukih ili dvostrukih navodnika:<hr>
-x = "Mačka"<br>
-jednako je<br>
-x = 'Mačka'<hr>
+Varijable String mogu se deklarirati ili korištenjem jednostrukih ili dvostrukih navodnika:<pre>
+x = "Mačka"
+
+jednako je
+
+x = 'Mačka'</pre>
 
 			<h4>Imenovanje varijabli</h4>
 			Varijabla može imati kraće ime (poput x i y) ili opisnije ime (starost, naziv automobila, ukupni_broj). <br>Pravila za Python varijable:<br>
@@ -500,35 +503,39 @@ x = 'Mačka'<hr>
 			<h4>Dodijeljivanje vrijednosti varijabli</h4><hr>
 
 			Python vam omogućava dodijeliti vrijednosti više varijabli u jednom retku:
-			<hr>x, y, z = "Jabuka", "Banana", "Jagoda"<br>
-print(x)<br>
-print(y)<br>
-print(z)<hr>
+			<pre>
+x, y, z = "Jabuka", "Banana", "Jagoda"
+print(x)
+print(y)
+print(z)</pre>
 
 
-A istu vrijednost možete dodijeliti više varijabli u jednom retku:<hr>
-hr>x, y, z = "Jabuka"<br>
-print(x)<br>
-print(y)<br>
-print(z)<hr>
+A istu vrijednost možete dodijeliti više varijabli u jednom retku:
+<pre>
+hr>x, y, z = "Jabuka"
+print(x)
+print(y)
+print(z)</pre>
 
 Naredba za ispis Pythona koristi se za ispis varijabli.
 
 Za kombiniranje teksta i varijable Python koristi znak +:
-<hr>
-x = "odličan"<br>
-print("Python is " + x) <hr>
+<pre>
+x = "odličan"
+print("Python je " + x) </pre>
 
-Možete upotrijebiti i znak + da biste dodali jednu varijablu u drugu varijablu: <hr>
-z = "Pyhton je"<br>
-x = "odličan"<br>
+Možete upotrijebiti i znak + da biste dodali jednu varijablu u drugu varijablu:
+<pre>
+z = "Pyhton je"
+x = "odličan"
 y = z + x
-print(y) <hr>
+print(y) </pre>
 
-Za brojeve, znak + djeluje kao matematički operator: <hr>
-z = 7<br>
-x = 2<br>
-print(x + z) <hr>
+Za brojeve, znak + djeluje kao matematički operator:
+<pre>
+z = 7
+x = 2
+print(x + z) </pre>
 Ako pokušate kombinirati niz i broj, Python će vam javiti grešku.
 
 			<br><br>
@@ -544,14 +551,14 @@ Globalna varijabla s istim nazivom ostat će onakva kakva je bila, globalna i s 
 
 Za stvaranje globalne varijable unutar funkcije možete koristiti globalnu ključnu riječ <b> global </b>.
 
-<hr>
-def mojafunk():<br>
-	global x<br>
-	x = "top"<br>
+<pre>
+def mojafunk():
+ global x
+ x = "top"
 
-mojafunk()<br>
+ mojafunk()
 
-print("Python je " + x)<hr>
+print("Python je " + x)</pre>
 
 Također, koristite ključnu riječ globalno ako želite promijeniti globalnu varijablu unutar funkcije.
 
@@ -664,44 +671,43 @@ Također, koristite ključnu riječ globalno ako želite promijeniti globalnu va
 				</ul>
 				Varijable numeričkih vrsta nastaju kada im dodijelite vrijednost.
 				Za provjeru tipa bilo kojeg objekta u Pythonu, upotrijebite funkciju type ():
-				<hr>print(type(x))<hr>
+				<pre>print(type(x))</pre>
 				Int, ili cijeli broj, je cijeli broj, pozitivan ili negativan, bez decimala, neograničene duljine.<br>
 				Float, ili "broj s pomičnim zarezom" je broj, pozitivan ili negativan, koji sadrži jedan ili više decimala.<br>
 				Float može biti i znanstveni brojevi sa slovom "e" koji označavaju snagu 10.<br>
 				Complex brojevi se pišu sa j kao imaginarnim dijelom.<br>
 				<br>
 				Možete mijenjati tipove podataka pomoću metoda int (), float () i complex ():
-				<hr>
+				<pre>
+x = 1 # int
+y = 2.8 # float
+z = 1j # complex
 
+#promjena iz int u float:
+a = float(x)
 
-				x = 1 # int <br>
-				y = 2.8 # float<br>
-				z = 1j # complex<br><br>
+#promjena iz float u int:
+b = int(y)
 
-				#promjena iz int u float:<br>
-				a = float(x)<br><br>
+#promjena iz int u complex:
+c = complex(x)
 
-				#promjena iz float u int:<br>
-				b = int(y)<br><br>
+print(a)
+print(b)
+print(c)
 
-				#promjena iz int u complex:<br>
-				c = complex(x)<br><br>
-
-				print(a)<br>
-				print(b)<br>
-				print(c)<br><br>
-
-				print(type(a))<br>
-				print(type(b))<br>
-				print(type(c))<hr>
+print(type(a))
+print(type(b))
+print(type(c))</pre>
 
 
 			Python nema funkciju random() za izradu slučajnih brojeva, ali Python ima ugrađeni modul koji se zove random i koji se može koristiti za izradu slučajnih brojeva.
-			<hr> import random <br>
+			<pre>
+import random
 
 print(random.randrange(1,10))
 
-<hr> <br>
+</pre>
 
 			Ponekad možete tip podatka specificirati na varijablu. To se može učiniti <i> castingom </i>.
 			Python je objektno orijentirani jezik i kao takav koristi klase za definiranje tipova podataka, uključujući i njegove primitivne tipove.
@@ -721,47 +727,54 @@ print(random.randrange(1,10))
 
 'jabuka' je isto što i "jabuka". <br>
 
-Možete prikazati string pomoću funkcije print (): <hr> print("Hello")<br>
-print('Hello')<hr>
+Možete prikazati string pomoću funkcije print ():
+<pre> print("Hello")
+print('Hello')</pre>
 
 Dodjeljivanje niza varijabli vrši se s nazivom varijable, nakon čega slijedi znak jednakosti i niza: <hr><br> a = "Hello"<br>
 print(a)<hr>
 
 Nizu u više linija možete dodijeliti varijable pomoću tri navodnika :
-<hr>
-a = """Lorem ipsum dolor sit amet,<br>
-consectetur adipiscing elit,<br>
-sed do eiusmod tempor incididunt<br>
-ut labore et dolore magna aliqua."""<br>
+<pre>
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
 print(a)
 
-<hr>
-mogu biti i jednostruki: <br> <br>
-a = '''Lorem ipsum dolor sit amet,<br>
-consectetur adipiscing elit,<br>
-sed do eiusmod tempor incididunt<br>
-ut labore et dolore magna aliqua.'''<br>
+</pre>
+mogu biti i jednostruki:
+<pre>
+a = '''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
 print(a)
 
-<hr>
+</pre>
 
 Kao u mnogim drugim popularnim programskim jezicima, i nizovi Pythona su nizovi bajtova koji predstavljaju znakove unicode.
 
 Međutim, Python nema znakovni tip podataka, jedan znak je jednostavno niz duljine 1.
 
-Uglate zagrade mogu se koristiti za pristup elementima niza. <hr> a = "Hello, World!"<br>
-print(a[1])<hr>
+Uglate zagrade mogu se koristiti za pristup elementima niza.
+<pre> a = "Hello, World!"
+print(a[1])</pre>
 
 Možete vratiti niz znakova koristeći sintaksu rezanja.
 
-Navedite početni indeks i završni indeks, odvojene dvotočkom, kako biste vratili dio niza.<hr> a = "Hello, World!"<br>
-print(b[2:5])<hr>
+Navedite početni indeks i završni indeks, odvojene dvotočkom, kako biste vratili dio niza.
+<pre> a = "Hello, World!"
+print(b[2:5])</pre>
 
-Upotrijebite negativne indekse da biste započeli <i>slice</i> s kraja niza: <hr> a = "Hello, World!"<br>
-print(b[-5:-2])<hr>
+Upotrijebite negativne indekse da biste započeli <i>slice</i> s kraja niza:
+<pre> a = "Hello, World!"
+print(b[-5:-2])</pre>
 
-Da biste dobili duljinu niza, upotrijebite funkciju len ().<hr> a = "Hello, World!"<br>
-print(len(a))<hr>
+Da biste dobili duljinu niza, upotrijebite funkciju len ().
+
+<pre> a = "Hello, World!"
+print(len(a))</pre>
 
 Python ima skup ugrađenih metoda koje možete koristiti na nizu.
 <ul>
@@ -857,37 +870,42 @@ Python ima skup ugrađenih metoda koje možete koristiti na nizu.
 
               <p>
 
-Nizovi se koriste za pohranjivanje više vrijednosti u jednu varijablu<hr>
-gradovi = ["Zagreb", "Rijeka", "Osijek"] <hr>
+Nizovi se koriste za pohranjivanje više vrijednosti u jednu varijablu
+<pre>
+gradovi = ["Zagreb", "Rijeka", "Osijek"] </pre>
 				Niz je posebna varijabla koja može sadržavati više vrijednosti odjednom.
 
 Ako imate popis predmeta (na primjer popis imena gradova), pohranjivanje gradova u jednu varijablu može izgledati ovako:
-<hr>grad1 = "Zagreb"
+<pre>
+grad1 = "Zagreb"
 grad2 = "Rijeka"
-grad3 = "Osijek" <hr>
+grad3 = "Osijek" </pre>
 
 				Međutim, što ako želite proći kroz gradove i pronaći određeni? A što ako niste imali 3 grada, već 300?
 
 Rješenje je niz!
 
 Niz može sadržavati mnoge vrijednosti pod jednim nazivom, a vrijednostima možete pristupiti pozivanjem na indeksni broj.
-<hr>x = gradovi[0]<hr>
-Izmijenite vrijednost prve stavke niza:<hr>gradovi[0] = "Split" <hr>
-Pomoću metode len () vraćate duljinu niza (broj elemenata u nizu). <hr>x = len(gradovi)<hr>
+<pre>x = gradovi[0]</pre>
+Izmijenite vrijednost prve stavke niza:
+<pre>gradovi[0] = "Split" </pre>
+Pomoću metode len () vraćate duljinu niza (broj elemenata u nizu).
+<pre>x = len(gradovi)</pre>
 
-Možete koristiti for in petlju da biste prešli kroz sve elemente niza. <hr> for x in gradovi: <br>
-  print(x)<hr>
+Možete koristiti for in petlju da biste prešli kroz sve elemente niza.
+<pre> for x in gradovi:
+  print(x)</pre>
 
   Možete koristiti metodu append () da biste dodali element u niz.
 
-  <hr>
-  gradovi.append("Opatija")<hr>
+  <pre>
+  gradovi.append("Opatija")</pre>
 
   Možete koristiti metodu pop () ili remove () da biste obrisali element u niz.
-  <hr>
-  gradovi.pop(1)<br> <br>
+  <pre>
+  gradovi.pop(1)
   gradovi.remove("Rijeka")
-  <hr>
+  </pre>
 
   <h4> Python ima skup ugrađenih metoda koje možete koristiti na listama / nizovima. </h4>
   <ul>
