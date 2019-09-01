@@ -396,7 +396,7 @@
 Naziv same varijable potrebno je osmisliti tako da bude smisleno u odnosu na njenu ulogu ili sadržaj. Deklariranje varijable kreira praznu varijablu, dok dodavanje vrijednosti čini inicijalizaciju varijable:
 <pre>
   var varijabla;                    // deklariranje varijable
-  varijabla = “neki tekst”          // inicijalizacija varijable</pre>
+  varijabla = "neki tekst"          // inicijalizacija varijable</pre>
 
 Nakon deklariranja varijable više nije potrebno koristiti riječ <b>var</b>.
 
@@ -509,6 +509,7 @@ PHP podržava sljedeće vrste podataka:
 <li>Boolean</li>
 <li>Number</li>
 <li>Object</li>
+<li>Array</li>
 <li>NULL i undefined</li>
 
 </ul>
@@ -520,8 +521,7 @@ String je niz znakova, poput "Hello world!".
 String može biti bilo koji tekst unutar citata. Možete koristiti jednostruke ili dvostruke navodnike.
 <pre>
 var primjer = "tekst";
-var primjerDrugi = 'isto tekst';
-</pre>
+var primjerDrugi = 'isto tekst';</pre>
 
 <br>
 <h4>Boolean</h4>
@@ -529,14 +529,45 @@ Boolean predstavlja dva moguća stanja: TRUE ili FALSE.
 
 <pre>
 var primjer3 = true;
-var primjer4 = false;
-</pre>
+var primjer4 = false;</pre>
 
 <br>
 <h4>Number (broj)</h4>
 Brojevi se koriste kao brojevni literali (doslovne vrijednosti). Nad brojevima koje je moguće koristiti moguće je vršiti matematičke operacije upotrebom aritmetičkih
-operatora (+, -, *, /, %, ++, --)
+operatora (+, -, *, /, %, ++, --).<br>
+Kod JavaScript programskog jezika je zanimljivo to što se decimalni brojevi ne pišu sa zarezom, već sa točkom koja razdvaja cijeli broj i decimalu.
+<pre>
+var x1 = 3.00;     // decimalni broj
+var x2 = 34;       // cijeli broj</pre>
 <br>
+<h4>Object</h4>
+Objekt (engl. <i>object</i>) je entitet koji sadrži svojstva (engl. <i>properties</i>) i metode (engl. <i>methods</i>). Svojstva su opisne karakteristike objekta, a metode su moguće radnje koje objekt može izvest. <br>
+Na primjer, ako promatramo automobil, objekt iz stvarnog svijeta, u njegove karakteristike spadaju boja, marka, broj vrata i sl. U metode spadaju njegove mogućnosti kretanja naprijed, nazad, automatsko zaključavanje vrata i sl. <br>
+Svojstva objekta se mogu smatrati varijablama koje sadrže brojeve i tekst, a metode funkcijama. <br>
+Objekti su složeni podaci, za razliku od ostalih tipova podataka koji su ovdje spomenuti.
+
+<pre>
+  var automobil = {
+    marka: "Mercedes",
+    brojVrata: 5,
+    brojKilometara: 115.550,
+    boja: "plava"
+  };</pre>
+
+  <h4>Array</h4>
+  Array ili niz pohranjuje više vrijednosti u jednu jedinicu. Ako imate popis predmeta (na primjer popis imena automobila),
+  pohranjivanje automobila u jednu varijablu može izgledati ovako:
+
+  <pre>
+var auto1 = "Saab";
+var auto2 = "Volvo";
+var auto3 = "BMW";</pre>
+
+Međutim, što ako želite proći kroz automobile i pronaći određeni? A što ako niste imali 3 automobila, već 300?
+Rješenje je niz! Niz može sadržavati mnoge vrijednosti pod jednim nazivom, a vrijednostima možete pristupiti pozivanjem na indeksni broj.
+<pre>
+var automobili = ["Saab", "Volvo", "BMW"];</pre>
+
 <br>
 <h4>NULL</h4>
 Null je posebna vrsta podataka koja može imati samo jednu vrijednost: NULL.
@@ -654,10 +685,11 @@ Undefined tip podatka ima vrijednost indefined. Varijable koje su deklarirane, a
 			   <pre>
     function prva ()  {...}       // funkcija bez parametra
 
-    function druga (part1, part2) {
-      var novaVrijednost = part1+part2;
-      return novaVrijednost;
-    }                            // funkcija sa parametrima</pre>
+    var x = mojaPrvaFunkcija(4, 3);
+    document.getElementById("demo").innerHTML = x;
+    function mojaPrvaFunkcija(a, b) {
+      return a * b;
+      }                            // funkcija sa parametrima</pre>
 
     Ukoliko funkcija treba vratiti (izračunatu) vrijednost, koristi se naredba <i>return</i>, kao u primjeru iznad.
 
@@ -916,6 +948,7 @@ petlje, ovaj kod izvršiti barem jednom. Njen oblik je:
           </div>
         </div>
       </section>
+
 
 
 
