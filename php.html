@@ -132,15 +132,15 @@
               <p>
                 PHP je programski skriptni jezik poslužitelja i moćan alat za izradu dinamičnih i interaktivnih web stranica.
 
-				PHP je široko korištena, besplatna i učinkovita alternativa konkurentima kao što je Microsoftov ASP. <br>
+				<br>
 
 				Prije nastavka trebali biste imati osnovno razumijevanje sljedećeg:
 
-<ul><li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li></ul>
+<ul><li><a href="html.html">HTML</a></li>
+<li><a href="css.html">CSS</a></li>
+<li><a href="js.html">JavaScript</a></li></ul>
 
-				PHP je akronim za "PHP: Hypertext Preprocessor".
+				PHP je rekurzivna skraćenica za "PHP: Hypertext Preprocessor".
 To je široko korišten skriptni jezik otvorenog koda.
 PHP skripte se izvršavaju na poslužitelju.
 
@@ -163,6 +163,19 @@ Sa PHP-om niste ograničeni na izlazni HTML. Možete reproducirati slike, PDF da
 				<li>PHP je jednostavan za naučiti i učinkovito radi na strani poslužitelja</li>
 
 				</ul>
+				
+				<b>XAMPP</b><br>
+				XAMPP je jednostavna multi-platforma s kojom instalirate 
+				Apache, MySQL, PHP, phpMyAdmin i još mnoge druge aplikacije
+				korisne za razvoj dinamičkih web stranica izravno na vašem računalu.
+
+
+Instalacija je jednostavna, a sama konfiguracija minimalna. Prvo što morate napraviti je skinuti XAMPP sa
+ <a href="https://www.apachefriends.org/download.html" target="_blank">službenih web stranica.</a> Zatim pokrenite izvršnu datoteku, odaberite jezik,
+ odredišnu mapu za instalaciju, želite prečicu na radnoj površini i u start izborniku, klin na Install te se pokreće proces instalacije.
+ Za završetak instalacije kliknite na Finish, zatim OK.
+
+<br><br>
 				<b>Instalacija PHP-a </b> <br>
 				Da biste započeli koristiti PHP, možete:
 
@@ -180,7 +193,7 @@ Međutim, ako vaš poslužitelj ne podržava PHP, morate:<br>
 instalirati web poslužitelj<br>
 instalirati PHP<br>
 instalirati bazu podataka, kao što je MySQL<br>
-<a href="http://php.net/manual/en/install.php"><b>Službena web stranica PHP-a (PHP.net)</b></a> sadrži upute za instalaciju PHP-a.
+<a href="http://php.net/manual/en/install.php" target="_blank"><b>Službena web stranica PHP-a (PHP.net)</b></a> sadrži upute za instalaciju PHP-a.
 
 
               </p>
@@ -190,20 +203,7 @@ instalirati bazu podataka, kao što je MySQL<br>
             <div class="row">
 
               <div class="grid related-works cs-style-3">
-                <div class="span2">
-                  <div class="item">
-                    <figure>
-                      <div><img src="img/dummies/works/html.png" alt=""></div>
-                      <figcaption>
-                        <h3>PHP Službene stranice</h3>
-                        <p>
-
-                          <a href="https://www.php.net"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
+                
                 <div class="span2">
                   <div class="item">
                     <figure>
@@ -212,7 +212,21 @@ instalirati bazu podataka, kao što je MySQL<br>
                         <h3>Nauči PHP</h3>
                         <p>
 
-                          <a href="https://www.learn-php.org"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.learn-php.org" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+				<div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>XAMPP</h3>
+                        <p>
+
+                          <a href="https://www.hdonweb.com/programiranje/xampp-instalacija-apache-web-servera-za-mysql-i-php" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -226,7 +240,7 @@ instalirati bazu podataka, kao što je MySQL<br>
                         <h3>Coursera: "Learn PHP"</h3>
                         <p>
 
-                          <a href="https://www.coursera.org/lecture/web-applications-php/php-basics-UhOlH"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.coursera.org/lecture/web-applications-php/php-basics-UhOlH" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -240,7 +254,7 @@ instalirati bazu podataka, kao što je MySQL<br>
                         <h3>Uvod u PHP: video</h3>
                         <p>
 
-                          <a href="https://www.youtube.com/watch?v=qVU3V0A05k8"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=qVU3V0A05k8" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -309,9 +323,9 @@ prouzrokovati neželjene efekte, jer PHP će pokrenuti izlazni međuspremnik kad
 
 				<br>
 				<pre>
-< ? php
+&#60;?php
 // PHP kod piše se ovdje
-? >				</pre>
+?&#62;				</pre>
 
 Zadano proširenje datoteke za PHP datoteke je ".php".
 
@@ -320,18 +334,18 @@ PHP datoteka obično sadrži HTML oznake i neki PHP kod.
 Ispod imamo primjer jednostavne PHP datoteke s PHP skriptu koja koristi ugrađenu PHP funkciju "echo" za ispis teksta "Hello World!" na web stranici:
 
 <pre>
-<!DOCTYPE html>
-< html >
-< body >
+&#60;!DOCTYPE html?&#62;
+&#60;html?&#62;
+&#60;body?&#62;
 
-< h1 >My first PHP page< /h1 >
+	&#60;h1?&#62;My first PHP page&#60;/h1?&#62;
 
-< ? php
-echo "Hello World!";
-? >
+	&#60;?php
+	echo "Hello World!";
+	?&#62;
 
-< /body >
-< /html >
+&#60;/body&#62;
+&#60;/html&#62;
 	</pre>
 
 U PHP-u, ključne riječi (npr. if, else, while, echo, itd.), klase, funkcije i korisnički definirane funkcije razlikuju velika i mala slova.
@@ -359,7 +373,7 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
                         <h3>PHP sintaksa</h3>
                         <p>
 
-                          <a href="https://www.geeksforgeeks.org/php-basic-syntax/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.geeksforgeeks.org/php-basic-syntax/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -373,7 +387,7 @@ Ne trebate imati ; ako završava zadnji redak PHP bloka.
                         <h3>Sintaksa: Video</h3>
                         <p>
 
-                          <a href="https://www.youtube.com/watch?v=abUuRqYUUaY"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=abUuRqYUUaY" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -432,15 +446,15 @@ Imena varijabli slijede ista pravila kao i ostale oznake u PHP-u.
 Važeće ime varijable započinje slovom ili podvlakom, nakon čega slijedi bilo koji broj slova, brojeva ili podvlaka.
  <pre>
 
- < ? php
-$var = 'jabuka';
-$Var = 'banana';
-echo "$var, $Var";
+&#60;?php
+	$ var = 'jabuka';
+	$ var = 'banana';
+	echo "$ var, $ var";
 
-$4site = 'kruška';
-$_4site = 'jagoda';
-$täyte = 'lubenica';
-? >
+	$2voce = 'dinja'
+	$_2voce = 'jagoda';
+	$voće = 'marelica';
+?&#62;
 
 </pre>
 
@@ -468,16 +482,14 @@ lokalno</li>
 <li>globalno</li>
 <li>statički</li> <br><br>
 					<pre>
-< ? php
-$a = 1; /* globalno */
-
-function test()
-{
-    echo $a; /* lokalno */
-}
-
-test();
-? > </pre>
+&#60;?php
+		$a = 1; /* globalno */
+	function test()
+		{
+			echo $a; /* lokalno */
+		}
+	test();
+?&#62; </pre>
 
               </p>
 
@@ -494,7 +506,7 @@ test();
                         <h3>Varijable</h3>
                         <p>
 
-                          <a href="https://www.php.net/manual/en/language.variables.php"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.php.net/manual/en/language.variables.php" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -508,7 +520,7 @@ test();
                         <h3>Varijable: Video</h3>
                         <p>
 
-                          <a href="https://www.youtube.com/watch?v=wuWAK0guilk"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=wuWAK0guilk" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -582,14 +594,14 @@ String je niz znakova, poput "Hello world!".
 
 String može biti bilo koji tekst unutar citata. Možete koristiti jednostruke ili dvostruke navodnike.
 <pre>
-< ? php
-$x = "Hello world!";
-$y = 'Hello world!';
+&#60;?php
+	$x = "Hello world!";
+	$y = 'Hello world!';
 
-echo $x;
-echo "< br >";
-echo $y;
-? >
+	echo $x;
+	echo "&#60;br&#62;";
+	echo $y;
+?&#62;
 </pre>
 
 <br>
@@ -607,10 +619,10 @@ Integer mora imati najmanje jednu znamenku</li>
  PHP var_dump () funkcija vraća vrstu i vrijednost podataka
 
 <pre>
-< ? php
-$x = 5985;
-var_dump($x);
-? >
+&#60;?php
+	$x = 5985;
+	var_dump($x);
+?&#62;
 </pre>
 
 <br>
@@ -620,10 +632,10 @@ Float je broj s decimalnom točkom.
 
 U sljedećem primjeru $ x je float. PHP var_dump () funkcija vraća vrstu i vrijednost podataka
 <pre>
-< ? php
-$x = 10.365;
-var_dump($x);
-? >
+&#60;?php
+	$x = 10.365;
+	var_dump($x);
+?&#62;
 </pre>
 
 <br>
@@ -632,8 +644,10 @@ var_dump($x);
 Boolean predstavlja dva moguća stanja: TRUE ili FALSE.
 
 <pre>
-$ x = true;
-$ y = false;
+&#60;?php
+	$ x = true;
+	$ y = false;
+?&#62;
 </pre>
 
 <br>
@@ -644,35 +658,32 @@ Array ili niz pohranjuje više vrijednosti u jednu jedinicu.
 U sljedećem primjeru $ gradovi je niz. PHP var_dump () funkcija vraća vrstu i vrijednost podataka:
 
 <pre>
-< ? php
-$gradovi = array("Zagreb","Rijeka","Osijek");
-var_dump($gradovi);
-? >
+&#60;?php
+	$gradovi = array("Zagreb","Rijeka","Osijek");
+	var_dump($gradovi);
+?&#62;
 </pre>
 
 <br>
 <br>
 <h4>Object</h4>
-Objekt je vrsta podataka koja pohranjuje podatke i informacije o načinu obrade tih podataka.
+Object je vrsta podataka koja pohranjuje podatke i informacije o načinu obrade tih podataka.
 
 U PHP-u se objekt mora izričito deklarirati.
 
 Prvo moramo proglasiti klasu objekta. Za to koristimo ključnu riječ class. Klasa je struktura koja može sadržavati svojstva i metode.
 
 <pre>
-< ? php
-class Grad {
-    function Grad() {
-        $this->grad = "Rijeka";
-    }
-}
-
-// create an object
-$opatija = new Grad();
-
-// show object properties
-echo $opatija->grad;
-?>
+&#60;?php class student
+	{
+	function izracun_ocjene()
+	{         
+	echo "Prikazi ocjene";
+	}
+	}
+	$student1 = new student;
+	$student1->izracun_ocjene); 
+?&#62;
 </pre>
 
 
@@ -688,11 +699,11 @@ Savjet: Ako je varijabla stvorena bez vrijednosti, automatski joj se dodjeljuje 
 Varijable se također mogu isprazniti postavljanjem vrijednosti na NULL.
 
 <pre>
-< ? php
-$x = "Hello world!";
-$x = null;
-var_dump($x);
-? >
+&#60;?php
+	$x = "Hello world!";
+	$x = null;
+	var_dump($x);
+?&#62;
 </pre>
 
 <br>
@@ -717,7 +728,7 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
                         <h3>Tipovi podataka</h3>
                         <p>
 
-                          <a href="https://www.tutorialrepublic.com/php-tutorial/php-data-types.php"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.tutorialrepublic.com/php-tutorial/php-data-types.php" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -731,7 +742,210 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
                         <h3>Tipovi podataka: Video</h3>
                         <p>
 
-                          <a href="https://www.youtube.com/watch?v=LajMQLWXQlo"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=LajMQLWXQlo" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="span4">
+            <aside class="right-sidebar">
+              <div class="widget">
+
+
+
+              </div>
+           <!--   <div class="widget">
+                <h5 class="widgetheading">Text widget</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos temporibus. Ne has omnis harum. Ei mea graece delenit nominati. Ut dolore albucius torquatos vel, choro gubergren no mel.
+                </p>
+
+              </div> -->
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!-- peti clanak-->
+	
+	<section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="span8">
+            <article class="noborder">
+              <div class="top-wrapper">
+                <div class="post-heading">
+                  <h3><a href="#">5. PHP petlje</a></h3>
+                </div>
+                <!-- start flexslider -->
+                <div class="portfolio-detail">
+                  <img src="img/works/full/image-01-full.jpg" alt="" />
+                </div>
+                <!-- end flexslider -->
+              </div>
+
+              <p>
+               Petlje u PHP-u koriste se za izvršavanje istog bloka koda određeni broj puta. <br>
+			   PHP podržava sljedeće četiri vrste petlje.<br>
+			   <ul>
+
+<li>for - prolazi kroz blok koda određeni broj puta.</li>
+
+<li>while - prolazi kroz blok koda ako je i pod uvjetom da je navedeni uvjet istinit.</li>
+
+<li>do ... while - jednom prolazi kroz blok koda, a zatim ponavlja petlju sve dok je poseban uvjet istinit.</li>
+
+<li>foreach - prolazi kroz blok koda za svaki element u nizu.</li>
+
+</ul>
+
+<b>FOR</b>
+			   <pre>
+&#60;?php
+	$a = 0;
+         $b = 0;
+         for( $i = 0; $i<5; $i++ ) {
+            $a += 10;
+            $b += 5;
+         }
+         echo ("Na kraju petlje a = $a i b = $b" );
+?&#62;</pre>
+
+<b>WHILE</b>
+			   <pre>
+&#60;?php
+	 $i = 0;
+         $br = 50;
+         while( $i < 10) {
+            $br--;
+            $i++;
+         }
+         echo ("Petlja staje na i = $i i br = $br" );
+?&#62;</pre>
+
+<b>DO WHILE</b>
+			   <pre>
+&#60;?php
+	$i = 0;
+         $br = 0;
+         do {
+            $i++;
+         }
+         while( $i < 10 );
+         echo ("Petlja staje na i = $i" );
+?&#62;</pre>
+
+<b>FOREACH</b>
+			   <pre>
+&#60;?php
+	$niz = niz( 1, 2, 3, 4, 5);
+         foreach( $niz as $vrijednost ) {
+            echo "Vrijednost je $vrijednost <br />";
+         }
+?&#62;</pre>
+
+<b>IF</b><br>
+Izjava if izvršava blok koda ako je jedan uvjet istinit.
+			   <pre>
+&#60;?php
+	if ($a > $b) {
+  echo "a je veće od b";
+  $b = $a;
+}
+?&#62;</pre>
+
+<b>IF...ELSE</b><br>
+Izjava if ... else izvršava neki blok koda ako je jedan uvjet istinit, a drugi blok koda ako je taj uvjet neistinit.
+			   <pre>
+&#60;?php
+if ($a > $b) {
+  echo "a je veće od b";
+} else {
+  echo "a nije veće od b";
+}
+?&#62;</pre>
+
+<b>IF...ELSEIF...ELSE</b><br>
+Izjava if ... elseif ... else izvršava različite blokove koda za više od dva uvjeta.
+			   <pre>
+&#60;?php
+if ($a > $b) {
+    echo "a je veće od b";
+} elseif ($a == $b) {
+    echo "a je jednako b";
+} else {
+    echo "a je manje od b";
+}
+?&#62;</pre>
+
+
+
+
+
+            <div class="row">
+
+              <div class="grid related-works cs-style-3">
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>IF</h3>
+                        <p>
+
+                          <a href="https://www.php.net/manual/en/control-structures.if.php" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>ELSE</h3>
+                        <p>
+
+                          <a href="https://www.php.net/manual/en/control-structures.else.php" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+				<div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>IF..ELSEIF..ELSE</h3>
+                        <p>
+
+                          <a href="https://www.php.net/manual/en/control-structures.elseif.php" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+				<div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>PHP petlje</h3>
+                        <p>
+
+                          <a href="https://www.tutorialspoint.com/php/php_introduction.htm" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -765,7 +979,7 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
       </div>
     </section>
 
-	<!-- PETI ČLANAK-->
+	<!-- Šesti ČLANAK-->
 
 	<section id="content">
       <div class="container">
@@ -774,7 +988,7 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3><a href="#">5. PHP niz</a></h3>
+                  <h3><a href="#">6. PHP niz</a></h3>
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -786,10 +1000,10 @@ Ovo nije stvarna vrsta podataka. To je spremanje referenci na funkcije i resurse
               <p>
                Nizovi se koriste za pohranjivanje više vrijednosti u jednu varijablu.
 			   <pre>
-< ? php
-$gradovi = array("Zagreb", "Osijek", "Rijeka");
-echo "Bila sam u " . $gradovi[0] . ", " . $gradovi[1] . " i " . $gradovi[2] . ".";
-? ></pre>
+&#60;?php
+	$gradovi = array("Zagreb", "Osijek", "Rijeka");
+	echo "Bila sam u " . $gradovi[0] . ", " . $gradovi[1] . " i " . $gradovi[2] . ".";
+?&#62;</pre>
 
 U PHP-u, funkcija array () koristi se za stvaranje niza:
 <pre>array();</pre>
@@ -807,33 +1021,38 @@ Indeksirani nizovi - nizovi s numeričkim indeksom</li>
 Postoje dva načina za stvaranje indeksiranih nizova:
 
 Indeks se može dodijeliti automatski (indeks uvijek započinje s 0), ovako:
-<pre>$gradovi = array("Zagreb", "Osijek", "Rijeka");</pre>
+<pre>
+&#60;?php
+	$gradovi = array("Zagreb", "Osijek", "Rijeka");
+?&#62;</pre>
 ili se indeks može dodijeliti ručno:
 <pre>
-$gradovi[0] = "Zagreb";
-$gradovi[1] = "Osijek";
-$gradovi[2] = "Rijeka";
+&#60;?php
+	$gradovi[0] = "Zagreb";
+	$gradovi[1] = "Osijek";
+	$gradovi[2] = "Rijeka";
+?&#62;
 </pre>
 
 Funkcija count () koristi se za vraćanje duljine (broja elemenata) niza.
 <pre>
-< ? php
-$gradovi = array("Zagreb", "Osijek", "Rijeka");
-echo count($gradovi);
-? >
+&#60;?php
+	$gradovi = array("Zagreb", "Osijek", "Rijeka");
+	echo count($gradovi);
+?&#62;
 </pre>
 
-Ba biste pregledali i ispisali sve vrijednosti indeksiranog niza, mogli biste upotrijebiti petlju, poput ove:
+Da biste pregledali i ispisali sve vrijednosti indeksiranog niza, mogli biste upotrijebiti petlju, poput ove:
 <pre>
-< ? php
-$gradovi = array("Zagreb", "Osijek", "Rijeka");
-$arrlength = count($gradovi);
+&#60;?php
+	$gradovi = array("Zagreb", "Osijek", "Rijeka");
+	$arrlength = count($gradovi);
 
-for($x = 0; $x < $arrlength; $x++) {
-    echo $bradovi[$x];
-    echo "< br >";
-}
-? >
+	for($x = 0; $x < $arrlength; $x++) {
+		echo $bradovi[$x];
+		echo "?&#60;br?&#62;";
+	}
+?&#62;
 </pre>
 
 <br>
@@ -842,25 +1061,31 @@ for($x = 0; $x < $arrlength; $x++) {
 Asocijativni nizovi su nizovi koji koriste imenovane ključeve koje im dodijelite.
 
 Postoje dva načina za stvaranje asocijativnog niza:
-<pre>$dob = array("Petar"=>"35", "Maja"=>"37", "Katarina"=>"43");</pre>
+<pre>
+&#60;?php
+	$dob = array("Petar"=>"35", "Maja"=>"37", "Katarina"=>"43");
+	?&#62;
+</pre>
 ili:
 <pre>
-$dob['Petar'] = "35";
-$dob['Maja'] = "37";
-$dob['Katarina'] = "43";
+&#60;?php
+	$dob['Petar'] = "35";
+	$dob['Maja'] = "37";
+	$dob['Katarina'] = "43";
+?&#62;
 </pre>
 
 Da biste pregledali i ispisali sve vrijednosti asocijativnog niza, mogli biste koristiti petlju foreach-a, poput ove:
 
 <pre>
-< ? php
-$dob = array("Petar"=>"35", "Maja"=>"37", "Katarina"=>"43");
+&#60;?php
+	$dob = array("Petar"=>"35", "Maja"=>"37", "Katarina"=>"43");
 
-foreach($dob as $x => $x_value) {
-    echo "Key=" . $x . ", Value=" . $x_value;
-    echo "< br >";
-}
-?>
+	foreach($dob as $x => $x_value) {
+		echo "Key=" . $x . ", Value=" . $x_value;
+		echo "< br >";
+	}
+?&#62;
 </pre>
 
 <br>
@@ -886,7 +1111,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                         <h3>Indeksirani niz</h3>
                         <p>
 
-                          <a href="https://www.geeksforgeeks.org/php-arrays/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.geeksforgeeks.org/php-arrays/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -900,7 +1125,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                         <h3>Asocijativi niz</h3>
                         <p>
 
-                          <a href="https://www.geeksforgeeks.org/associative-arrays-in-php/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.geeksforgeeks.org/associative-arrays-in-php/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -914,7 +1139,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                         <h3>Višedimenzionalni niz</h3>
                         <p>
 
-                          <a href="https://www.w3schools.com/php/php_arrays_multi.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.w3schools.com/php/php_arrays_multi.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -928,7 +1153,7 @@ pet ili više razina. Međutim, nizovi dublji od tri razine teško su razumljivi
                         <h3>PHP nizovi: video</h3>
                         <p>
 
-                          <a href="https://www.youtube.com/watch?v=xRGsm1z1nLU"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=xRGsm1z1nLU" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>

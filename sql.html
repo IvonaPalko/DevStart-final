@@ -187,7 +187,7 @@ Podaci u RDBMS-u pohranjuju se u objekte baze podataka nazvane tablicama. Tablic
                         <h3>Nauči SQL</h3>
                         <p>
                           
-                          <a href="https://learntocodewith.me/posts/sql-guide/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://learntocodewith.me/posts/sql-guide/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -201,7 +201,7 @@ Podaci u RDBMS-u pohranjuju se u objekte baze podataka nazvane tablicama. Tablic
                         <h3>SQL: Video</h3>
                         <p>
                           
-                          <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -215,7 +215,7 @@ Podaci u RDBMS-u pohranjuju se u objekte baze podataka nazvane tablicama. Tablic
                         <h3>Coursera: "Learn SQL"</h3>
                         <p>
                           
-                          <a href="https://www.coursera.org/collections/learn-sql"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.coursera.org/collections/learn-sql" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -233,13 +233,13 @@ Podaci u RDBMS-u pohranjuju se u objekte baze podataka nazvane tablicama. Tablic
                 <h5 class="widgetheading">SQL Baze podataka</h5>
                 <ul class="folio-detail">
                   <li><label>1. Oracle 12c</label></li>
-                  <li><label>2. MySQL</label> </li>
+                  <li><label>2. MySQL (MariaDB)</label> </li>
                   <li><label>3. Microsoft SQL Server</label></li>
                   <li><label>4. PostgreSQL</label> </li>
 				  <li><label>5. Sybase ASE</label></li>
 				  <li><label>6. DB2</label></li>
-                  <li><label>7. Microsoft Access</label> </li>
-                  <li><label>8. SQLite</label></li>
+                  
+                  <li><label>7. SQLite</label></li>
                   
 				  
                 </ul>
@@ -279,79 +279,29 @@ Podaci u RDBMS-u pohranjuju se u objekte baze podataka nazvane tablicama. Tablic
               </div>
 
               <p>
-                <b>Tablice baza podataka</b>
+                <b>Tablice baza podataka</b><br>
 Baza podataka najčešće sadrži jednu ili više tablica. Svaka se tablica identificira imenom (npr. "Kupci" ili "Narudžbe"). Tablice sadrže zapise (retke) s podacima.
 <b>SQL naredbe</b>
 Većina radnji koje trebate obaviti u bazi podataka obavlja se s SQL naredbama.
 <br>
 Neke od najvažnijih SQL naredbi:
 <ul>
+<li>CREATE DATABASE - stvara novu bazu podataka</li>
+<li>CREATE TABLE - stvara novu tablicu</li>
+<li>INSERT INTO - ubacuje nove podatke u bazu podataka</li>
 <li>SELECT - izvlači podatke iz baze podataka</li>
 <li>UPDATE - ažurira podatke u bazi podataka</li>
 <li>DELETE - briše podatke iz baze podataka</li>
-<li>INSERT INTO - ubacuje nove podatke u bazu podataka</li>
-<li>CREATE DATABASE - stvara novu bazu podataka</li>
-
-<li>CREATE TABLE - stvara novu tablicu</li>
 <li>ALTER TABLE - mijenja tablicu</li>
 <li>DROP TABLE - briše tablicu</li>
-
-
 <li>DROP DATABASE - briše indeks</li>
 
 
 </ul>
-
-<b> SELECT </b> <br>
-Izjava SELECT koristi se za odabir podataka iz baze podataka.
-
-Vraćeni podaci pohranjuju se u tablicu rezultata, koja se naziva skup rezultata.
-<pre>
-SELECT stupac11, stupac2 ...
-FROM naziv_tablice;
-</pre>
-Slijedeći SQL izraz bira sve stupce iz tablice "Kupci":
-<pre>
-SELECT * FROM Kupci;
-</pre>
-
-<b> UPDATE </b> <br>
-Izjava UPDATE koristi se za izmjenu postojećih zapisa u tablici.
-<pre>
-UPDATE naziv_tablice
-SET stupac1 = vrijednost1, stupac2 = vrijednost2, ...
-WHERE condition;
-</pre>
-
-<b> DELETE </b> <br>
-Izjava DELETE koristi se za brisanje postojećih zapisa u tablici.
-<pre>
-DELETE FROM naziv_tablice WHERE uvjet;
-
-DELETE FROM Kupci WHERE Ime='Maja';
-</pre>
-
-<b> INSERT INTO </b> <br>
-Izjava INSERT INTO koristi se za umetanje novih zapisa u tablicu.<br>
-INSERT INTO moguće je napisati na dva načina.
-
-Prvi način određuje i nazive stupaca i vrijednosti koje treba umetnuti:
-<pre>
-INSERT INTO naziv_tablice (stupac1, stupac2, stupac3, ...)
-VALUES (vrijednost1, vrijednost2, vrijednost3, ...);
-</pre>
-
-Ako dodajete vrijednosti za sve stupce tablice, ne morate specificirati nazive stupaca u SQL upitu. 
-Međutim, provjerite je li redoslijed vrijednosti istim redoslijedom kao i stupci u tablici. Sintaksa INSERT INTO bila bi sljedeća:
-<pre>
-INSERT INTO naziv_tablice
-VALUES (vrijednost1, vrijednost2, vrijednost3, ...);
-</pre>
-
 <b> CREATE DATABASE </b> <br>
 Izjava CREATE DATABASE koristi se za stvaranje nove SQL baze podataka.
 <pre>
-CREATE DATABASE databasename;
+CREATE DATABASE naziv_baze;
 </pre>
 
 <b> CREATE TABLE </b> <br>
@@ -363,6 +313,55 @@ CREATE TABLE naziv_tablice (
     stupac3 tipPodatka,
    ....
 );</pre>
+<b> INSERT INTO </b> <br>
+Izjava INSERT INTO koristi se za umetanje novih zapisa u tablicu.<br>
+INSERT INTO moguće je napisati na dva načina.
+
+Prvi način određuje i nazive stupaca i vrijednosti koje treba umetnuti:
+<pre>
+INSERT INTO naziv_tablice (stupac1, stupac2, stupac3)
+VALUES (vrijednost1, vrijednost2, vrijednost3);
+</pre>
+
+Ako dodajete vrijednosti za sve stupce tablice, ne morate specificirati nazive stupaca u SQL upitu. 
+Međutim, provjerite je li redoslijed vrijednosti istim redoslijedom kao i stupci u tablici. Sintaksa INSERT INTO bila bi sljedeća:
+<pre>
+INSERT INTO naziv_tablice
+VALUES (vrijednost1, vrijednost2, vrijednost3);
+</pre>
+
+<b> SELECT </b> <br>
+Izjava SELECT koristi se za odabir podataka iz baze podataka.
+
+Vraćeni podaci pohranjuju se u tablicu rezultata, koja se naziva skup rezultata.
+<pre>
+SELECT stupac1, stupac2 
+FROM naziv_tablice;
+</pre>
+Slijedeći SQL izraz bira sve stupce iz tablice "Kupci":
+<pre>
+SELECT * FROM Kupci;
+</pre>
+
+<b> UPDATE </b> <br>
+Izjava UPDATE koristi se za izmjenu postojećih zapisa u tablici.
+<pre>
+UPDATE naziv_tablice
+SET stupac1 = vrijednost1, stupac2 = vrijednost2
+WHERE condition;
+</pre>
+
+<b> DELETE </b> <br>
+Izjava DELETE koristi se za brisanje postojećih zapisa u tablici.
+<pre>
+DELETE FROM naziv_tablice WHERE uvjet;
+
+DELETE FROM Kupci WHERE Ime='Maja';
+</pre>
+
+
+
+
 
 <b> ALTER TABLE </b> <br>
 Izjava ALTER TABLE koristi se za dodavanje, brisanje ili izmjenu stupaca u postojećoj tablici.
@@ -371,11 +370,9 @@ Izjava ALTER TABLE također se koristi za dodavanje i ispuštanje različitih og
 <pre>
 ALTER TABLE naziv_tablice
 ADD naziv_stupca tipPodatka;
-);
 
 ALTER TABLE Kupci
 ADD Email varchar(255);
-
 </pre>
 
 <b> DROP TABLE </b> <br>
@@ -409,7 +406,7 @@ DROP DATABASE naziv_baze;
                         <h3>Sintaksa</h3>
                         <p>
                           
-                          <a href="https://www.tutorialspoint.com/sql/sql-syntax.htm"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.tutorialspoint.com/sql/sql-syntax.htm" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -423,7 +420,7 @@ DROP DATABASE naziv_baze;
                         <h3>Sintaksa: Video</h3>
                         <p>
                           
-                          <a href="https://www.youtube.com/watch?v=cWMCHbxMiMI"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=cWMCHbxMiMI" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -520,7 +517,7 @@ U SQL-u postoje tri glavne vrste podataka: string(niz), numerički te datum i vr
                         <h3>Tipovi podataka</h3>
                         <p>
                           
-                          <a href="https://www.w3schools.com/sql/sql_datatypes.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.w3schools.com/sql/sql_datatypes.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -534,7 +531,7 @@ U SQL-u postoje tri glavne vrste podataka: string(niz), numerički te datum i vr
                         <h3>Tipovi podataka: Video</h3>
                         <p>
                           
-                          <a href="https://www.youtube.com/watch?v=yCYF3SKd4ko"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=yCYF3SKd4ko" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -595,7 +592,7 @@ U SQL-u postoje tri glavne vrste podataka: string(niz), numerički te datum i vr
 <li>FULL (OUTER) JOIN: Vraća sve zapise ako postoji podudaranje u lijevoj ili desnoj tablici</li>
 			</ul>
 			
-			<img src="joins.png" height="420" width="420">
+			<img src="img/joins.png" height="420" width="420">
 <br>
 
 <b>INNER JOIN Sintaksa</b>	
@@ -604,6 +601,7 @@ SELECT naziv_stupca
 FROM tablica1
 INNER JOIN tablica2
 ON tablica1.naziv_stupca = tablica2.naziv_stupca;
+WHERE uvjet;
 </pre>
 
 <b> LEFT JOIN Sintaksa</b>	
@@ -630,6 +628,38 @@ FULL OUTER JOIN tablica2
 ON tablica1.naziv_stupca = tablica2.naziv_stupca;
 WHERE uvjet;
 </pre>
+
+<b> WHERE</b>	<br>
+Klauzula WHERE koristi se za filtriranje zapisa.
+
+Upotrebljava se za izdvajanje samo onih zapisa koji ispunjavaju određeni uvjet.
+
+<pre>
+SELECT * FROM Kupci
+WHERE Ime='Maja';
+</pre>
+
+<b> AND, OR, NOT</b>	<br>
+WHERE može se kombinirati s operaterima AND, OR i NOT.
+
+Upotrebljava se za izdvajanje samo onih zapisa koji ispunjavaju određeni uvjet.<br><br>
+Operator AND prikazuje zapis ako su svi uvjeti izdvojeni sa AND i TRUE.<br>
+<pre>
+SELECT * FROM Kupci
+WHERE Zemlja='Hrvatska' AND Grad='Osijek';
+</pre>
+Operater OR prikazuje zapis ako je bilo koji od uvjeta izdvojen sa OR ili TRUE.<br>
+<pre>
+SELECT * FROM Kupci
+WHERE Grad='Osijek' OR Grad='Zagreb';
+</pre>
+Operator NOT prikazuje zapis ako je uvjet NOT TRUE.
+<br>
+<pre>
+SELECT * FROM Kupci
+WHERE NOT Zemlja='Hrvatska';
+</pre>
+
               </p>
 
             </article>
@@ -645,7 +675,7 @@ WHERE uvjet;
                         <h3>SQL JOIN</h3>
                         <p>
                           
-                          <a href="http://www.sql-join.com/sql-join-types"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="http://www.sql-join.com/sql-join-types" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -659,7 +689,7 @@ WHERE uvjet;
                         <h3>SQL JOIN: Video</h3>
                         <p>
                           
-                          <a href="https://www.youtube.com/watch?v=bLL5NbBEg2I"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          <a href="https://www.youtube.com/watch?v=bLL5NbBEg2I" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
