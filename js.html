@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>DevStart - HTML</title>
+  <title>DevStart - JavaScript</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn HTML" />
+  <meta name="description" content="JavaScript learning material" />
   <meta name="author" content="Ivona Palko" />
 
   <!-- css -->
@@ -31,7 +32,9 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
+
 <body>
+
   <div id="wrapper">
     <!-- start header -->
     <header>
@@ -50,7 +53,7 @@
               <div class="navigation">
                 <nav>
                   <ul class="nav topnav">
-                    <li>
+                    <li class="active">
                       <a href="index.html">Naslovna</a>
                     </li>
                     <li class="dropdown">
@@ -63,9 +66,9 @@
                     <li class="dropdown">
                       <a href="#">Frontend <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a href="html.html">HTML</a></li>
-                        <li><a href="css.html">CSS</a></li>
-                        <li><a href="js.html">JavaScript</a></li>
+                          <li><a href="html.html">HTML</a></li>
+                          <li><a href="css.html">CSS</a></li>
+                          <li><a href="js.html">JavaScript</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
@@ -90,19 +93,26 @@
       </div>
     </header>
     <!-- end header -->
+
     <section id="inner-headline">
       <div class="container">
         <div class="row">
           <div class="span4">
             <div class="inner-heading">
-              <h2>HTML</h2>
+              <h2>JavaScript</h2>
             </div>
           </div>
+          <!--<div class="span8">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
+              <li><a href="#">Portfolio</a> <i class="icon-angle-right"></i></li>
+              <li class="active">Portfolio detail</li>
+            </ul>
+          </div>-->
         </div>
       </div>
     </section>
 
-<!-- 1. Uvod u HTML-->
     <section id="content">
       <div class="container">
         <div class="row">
@@ -110,7 +120,7 @@
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3>1. Što je to HTML?</h3>
+                  <h3>1. Uvod u JavaScript programski jezik</h3>
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -120,25 +130,51 @@
               </div>
 
               <p>
-                HTML predstavlja skraćenicu za "HyperText Markup Language" i on je službeni jezik web stranica.
-                Ono nije računalni programski jezik, HTML se naziva označiteljskim jezikom, koji postavlja upute ili oznake (tagove) oko teksta kako bi
-                internet preglednici znali kako prikazati određeni tekst (ili vizual) na ekranu. Najjednostavnije rečeno, HTML zapravo predstavlja skup
-                instrukcija za internet preglednik.
+                JavaScript predstavlja najpopularniji skriptni jezik kojim možemo kreirati interaktivne web stranice. Interaktivne web stranice omogućavaju međudjelovanje s korisnikom,
+                upravljanje web preglednikom ili dinamično kreiranje web stranice. JavaScript se izvodi na klijentskom računalu i može se izvoditi u svim
+                novijim verzijama web preglednika. <br>
+                Standard JavaSrcipta je ECMA-262.
+              </p>
+              <p>
+                Neke od prednosti JavaScripta su:
+                      <ul>
+                        <li>Manja potreba za komunikaciju sa serverom. Može se provjeriti ispravnost podatka prije slanja stranice na server. To smanjuje promet prema serveru.</li>
+                        <li>Trenutni odziv korisniku. Korisnik ne treba čekati da se stranica ponovno učita kako bi vidio je li zaboravio unijeti neki podatak.</li>
+                        <li>Povećana interaktivnost. Moguće je kreirati sučelje koje reagira na korisnikove akcije tipkovnice ili miša.</li>
+                        <li>Bogatije sučelje. Možete koristiti JavaScript za uhvati i pusti komponente ili animirati bogatije sučelje prema korisniku.</li>
+                      </ul>
+
+                      JavaScript, sam po sebi, je komplementaran jezik, što znači da nije nemoguće napisati cijelu aplikaciju samo u JavaScripti.
+                      JavaScript predstavljen je slovom J u akronimu AJAX (Asynchronous JavaScript and XML), međutim, pored toga, JS je svakodnevni
+                      jezik koji omogućava očekivanu interaktivnost web stranice.
+                      JavaScript može izvršavati brojne zadatke na klijentskoj strani aplikacije (padajući izbornici, pomoć pri ispunjavanju obrazaca…).
+              </p>
+
+              <p>
+                Primjena JavaScripta obuhvaća široki spektar, iako se ono odvija samo u okviru web preglednika. JS se može koristiti za potrebe:<br>
+                <ul>
+                  <li>vizualnog bogaćenja HTML dokumenta (animacije, interaktivnost, stilizacije)</li>
+                  <li>pristupa sadržaju (mogu se odabrati bilo koji HTML elementi, atributi ili njihov sadržaj)</li>
+                  <li>mijenjanja sadržaja - utjecaj na HTML strukturu bez ponovnog učitavanja dokumenta</li>
+                  <li>kreiranja različitih web aplikacija - igrice, glazbeni programi i sl.</li>
+                  <li>provjere obrazaca - validacija kontrola obrazaca</li>
+                </ul>
               </p>
 
             </article>
 
             <div class="row">
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>HTML Introduction</h3>
+                        <h3>JavaScript Tutorial</h3>
                         <p>
-                          <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.w3schools.com/js/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -149,10 +185,10 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>What is HTML?</h3>
+                        <h3>What is JavaScript?</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.yourhtmlsource.com/starthere/whatishtml.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.guru99.com/introduction-to-javascript.html"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -163,29 +199,16 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>Learn HTML in 12 Minutes</h3>
+                        <h3>What is JavaScript and where can we use it</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.youtube.com/watch?v=bWPMSSsVdPk" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.youtube.com/watch?v=dlfrWbYk1v0"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                <div class="span2">
-                  <div class="item">
-                    <figure>
-                      <div><img src="img/dummies/works/html.png" alt=""></div>
-                      <figcaption>
-                        <h3>HTML Basics</h3>
-                        <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
+
 
               </div>
             </div>
@@ -194,16 +217,6 @@
 
           <div class="span4">
             <aside class="right-sidebar">
-
-              <div class="widget">
-                <h5 class="widgetheading">Alati za uređivanje HTML-a</h5>
-                <p>
-                  Osnovna "oprema" za rad sa HTML-om je alat za uređivanje koda i teksta; uz naravno, računalo i pristup Internetu.</br>
-                  P.S. većina operativnih sustava sadrže alate za uređivanje teksta i koda, a oni mogu, za početak, biti sasvim dovoljni za
-                  jednostavne web stranice - npr. Notepad.
-                </p>
-              </div>
-
               <div class="widget">
                 <h6 class="widgetheading">Nekoliko besplatnih alata:</h6>
                 <ol class="folio-detail">
@@ -211,25 +224,34 @@
                   <li><a href="https://netbeans.org/" target="_blank"><label>NetBeans</label></a></li>
                   <li><a href="https://www.sublimetext.com/" target="_blank"><label>Sublime</label></a></li>
                   <li><a href="http://brackets.io/" target="_blank"><label>Brackets</label></a></li>
+                  <li><a href="https://code.visualstudio.com/download" target="_blank"><label>Visual Studio Code</label></a></li>
                 </ol>
               </div>
+           <!--   <div class="widget">
+                <h5 class="widgetheading">Text widget</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos temporibus. Ne has omnis harum. Ei mea graece delenit nominati. Ut dolore albucius torquatos vel, choro gubergren no mel.
+                </p>
 
-
+              </div> -->
             </aside>
           </div>
         </div>
       </div>
     </section>
 
-<!-- 2. HTML elementi-->
-    <section id="content">
+
+	<!-- DRUGI ČLANAK-->
+
+
+	<section id="content">
       <div class="container">
         <div class="row">
           <div class="span8">
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3>2. HTML tagovi (elementi)</h3>
+                  <h3>2. JavaScript sintaksa</h3>
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -239,32 +261,63 @@
               </div>
 
               <p>
-                Kao što je prikazano u izvorima navedenima iznad, HTML je skup oznaka koje definiraju izgled i prikaz sadržaja na web stranici.
-                HTML elementi, odnosno tagovi, su ono od čega je HTML sastavljen. Također, HTML je sastavljen još od elemenata i atributa, o čemu će biti riječi u sljedećem poglavlju.
-                HTML tagovi (elementi) su instrukcije za Internet preglednike o sadržaju pojedinog elementa.<br/>
-                Tagovi (elementi) se sastoje od uglatih zagrada između kojih se nalaze upustva za označivanje teksta.
-                Primjera radi:<br/><br/>
+                Kao i svaki drugi jezik, i JavaScript ima svoj rječnik i sintaksu, odnosno pravila za pisanje. Njegova sintaksa je bazirana na programskom jeziku C.
+              </p><br>
+                <h6>Pisanje identifikatora</h6>
+              <p>
+                Identifikatori su nazivi kojima se imenuju varijable, funkcije, objekti i nazivi svojstava objekata.
+                Pravila za formiranje ispravnih naziva za identitifikatore u JavaScriptu su ista kao u Javi. Prvi znak mora biti: slovo donja crta ili znak dolar ($).
+                Dakle, ne smije biti brojka iii neki drugi znak. Svaki sljedeći znak može biti slovo, donja crta, znak dolar, ili brojka.
+              </p><br>
+              <h6>Izjave (engl. <i>statements</i>)</h6>
+            <p>
+              U JavaScriptu nije obavezno završavanje izjave točkom i zarezom već je opcionalno, i njeno nepostojanje uglavnom neće izazvati grešku pri izvršavanju programa,
+              međutim programerska praksa pitanja točke i zareza je toliko jaka da je ostala i u JS-u. <br>
+              Određene strukture jezika ne zahtjevaju upotrebu točke i zareza, dok je ona obavezna ako se više izjava ispisuju odjednom. Primjerice:
+              <pre>
+      var pozdrav = "Dobar dan!";
+      document.write(pozdrav);</pre>
+            </p><br>
+            <h6>Ključne riječi</h6>
+              <p>
+              Postoje određene riječi u JavaScriptu koje se vode kao <a href="https://www.w3schools.com/js/js_reserved.asp" alt="kljucne rijeci">ključne riječi</a> jer imaju određenu ulogu (<i>for, if, var, case… </i>).
+              Ove riječi se ne smiju koristiti kao identifikatori jer već same po sebi imaju namjenu.
+              </p><br>
+              <h6>Blokovi koda</h6>
+            <p>
+              Određene strukture u JavaScriptu sadrže blokove koda, kao to su petlje i funkcije. Blokovi koda odvajaju se vitičastim zagradama, odnosno kod koji se nalazi među njima je blok.  Npr.:
+<pre>
+      if (a == b) {document.write('Jednako je.');}</pre>
 
-                <b>&lt;p&gt;Ovo je primjer koda paragrafa čiji bi se sadržaj prikazivao u pregledniku&lt;/p&gt;</b> <br><br>
+              U primjeru iznad cijeli kod između vitičastih zagrada predstavlja blok koda. Kodni blok može sadržati proizvoljnu količinu koda u sebi. Važno je obratiti pažnju da kada se jednom otvori vitičasta zagrada na početku bloka, na kraju bloka se ona mora i zatvoriti.
 
-                U ovom primjeru, slovo <b>p</b> okruženo je uglatim zagradama koje predstavljaju oznaku paragrafa. Prva oznaka predstavlja početku oznaku i daje
-                do znanja pregledniku da prikaže sav tekst koji slijedi u obliku paragrafa. Oznaka <b>/p</b> u također uglatnim zagradama predstavlja krajnju oznaku te govori
-                pregledniku da je to kraj paragrafa (kosa crta označava kraj u HTML oznakama).
-              </p>
+            </p><br>
+            <h6>Velika i mala slova</h6>
+              <p>
+                U JavaScript jeziku nije svejedno jesu li slova mala ili velika već on prepoznaje razliku. Usvojeno je pravilo da nazivi identifikatora za varijable,
+                funkcije, nizove itd. počinju malim slovom, a da nazivi konstruktora počinju velikim slovom. Ukoliko se identifikator sastoji od više od jedne riječi, koristi se tzv.
+                <i>camelCase</i>, odnosno spajanje te dvije riječi uz veliko početko slovo druge riječi.
+              </p><br>
+              <h6>Komentari</h6>
+            <p>
+              Komentari se mogu pisati u jednom redu ili u više redova. Također, komentiranje može poslužiti i pri ispitivanju i traženju grešaka. Pisanje komentara u jednom redu vrši se pomoću
+              znakova //, dok se komentiranje više redova vrši pomoću skupa znakova /* */, isto kao u CSS-u.
+            </p>
 
             </article>
 
             <div class="row">
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>Your First 10 HTML Tags</h3>
+                        <h3>JavaScript Syntax</h3>
                         <p>
-                          <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.elated.com/first-10-html-tags/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.w3schools.com/js/js_syntax.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -275,10 +328,10 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>Most commonly used tags in HTML</h3>
+                        <h3>JavaScript - Syntax</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.geeksforgeeks.org/most-commonly-used-tags-in-html/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.tutorialspoint.com/javascript/javascript_syntax.htm"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -289,29 +342,16 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>Basic HTML Tagss</h3>
+                        <h3>Learn Javascript Syntax For Dummies</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://runestone.academy/runestone/books/published/webfundamentals/HTML/basic.html#basic-html-tags" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.youtube.com/watch?v=MgJVMeB0ESw"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                <div class="span2">
-                  <div class="item">
-                    <figure>
-                      <div><img src="img/dummies/works/html.png" alt=""></div>
-                      <figcaption>
-                        <h3>HTML Tags List</h3>
-                        <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.javatpoint.com/html-tags-list" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
+
 
               </div>
             </div>
@@ -320,41 +360,27 @@
 
           <div class="span4">
             <aside class="right-sidebar">
-
               <div class="widget">
-                <h5 class="widgetheading">Iznimke u tagovima</h5>
-                <p>
-                Svi tagovi se pišu sa početnim i završnim tagom (kojeg označava kosa crta /), međutim postoje i iznimke. </br>
-                Oznaka za liniju te oznaka za prijelog teksta (sljedeći red) su individualne i piše se samo jedna oznaka sa crtom! </br></br>
-                <b>&lt;br/&gt;</b> označava prijelom teksta (enter)</br>
-                <b>&lt;hr/&gt;</b> označava liniju koja se prikaže u redu
-                </p>
+
+
+
               </div>
-
-              <div class="widget">
-                <h6 class="widgetheading">Pojašnjenje:</h6>
-                <ol class="folio-detail">
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank"><label>&lt;br/&gt;</label></a></li>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank"><label>&lt;hr/&gt;</label></a></li>
-                </ol>
-              </div>
-
-
             </aside>
           </div>
         </div>
       </div>
     </section>
 
-<!-- 3. HTML atributi-->
-    <section id="content">
+	<!-- TREĆI ČLANAK-->
+
+	<section id="content">
       <div class="container">
         <div class="row">
           <div class="span8">
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3>3. HTML atributi</h3>
+                  <h3>3. JavaScript varijable</h3>
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -364,29 +390,38 @@
               </div>
 
               <p>
-                HTML elementi mogu imati svoje atribute ili svojstva. Atributi služe kako bi pružili
-                dodatne informacije o pojedinom elementu. Oni obično imaju naziv i vrijednost, a
-                u samom kodu se ispisuju <b>naziv&#61;&ldquo;vrijednost&rdquo;</b> <br>
-                Atributi su načelno opcionalni, odnosno možemo ih koristiti međutim nije greška ukoliko
-                ih izostavimo. <br>
-                Na primjer, naslov pojedine stavke (npr. slike na web stranici) će se prikazati ukoliko
-                prinesemo miš na nju. Taj naslov je dodani atribut, koji nije morao postojati, a dodao se unutar elementa <b>img</b>
-                kao naslov (<b>title&#61;&ldquo;Naslov slike&rdquo;</b>).
+                Varijable služe da se uskladište podaci u memoriju i da se koriste u programu. Naime, nije dovoljno varijablu samo deklarirati, već joj dodati i vrijednosti. Definiranje varijable se vrši naredbom za deklariranje, a ona je <b>var</b> - sintaksa je sljedeća:
+<pre> var nazivVarijable;</pre>
+
+Naziv same varijable potrebno je osmisliti tako da bude smisleno u odnosu na njenu ulogu ili sadržaj. Deklariranje varijable kreira praznu varijablu, dok dodavanje vrijednosti čini inicijalizaciju varijable:
+<pre>
+  var varijabla;                    // deklariranje varijable
+  varijabla = "neki tekst"          // inicijalizacija varijable</pre>
+
+Nakon deklariranja varijable više nije potrebno koristiti riječ <b>var</b>.
+
+
+<br> <br>Pravila za JavaScript varijable:<br>
+
+<ul><li>prvi karakter mora biti slovo, donja crta ili znake $</li>
+<li>ostali karakteri mogu biti slova, brojke, donja crta ili $</li></ul>
+
               </p>
 
             </article>
 
             <div class="row">
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>HTML Attributes Explained</h3>
+                        <h3>Varijable</h3>
                         <p>
-                          <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/html-attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.w3schools.com/js/js_variables.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -397,10 +432,10 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>HTML 4 Common Attributes</h3>
+                        <h3>Variables and Datatypes in JavaScript</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="http://www.htmlhelp.com/reference/html40/attrs.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.geeksforgeeks.org/variables-datatypes-javascript/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -411,29 +446,16 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>HTML Attributes</h3>
+                        <h3>Varijable: Video</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://html.com/attributes/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.youtube.com/watch?v=9aGIAL16DL4"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                <div class="span2">
-                  <div class="item">
-                    <figure>
-                      <div><img src="img/dummies/works/html.png" alt=""></div>
-                      <figcaption>
-                        <h3>HTML attribute reference</h3>
-                        <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
+
 
               </div>
             </div>
@@ -442,41 +464,34 @@
 
           <div class="span4">
             <aside class="right-sidebar">
-
               <div class="widget">
-                <h5 class="widgetheading">Nešto više o atributima</h5>
+
+
+
+              </div>
+           <!--   <div class="widget">
+                <h5 class="widgetheading">Text widget</h5>
                 <p>
-                  Pojedini elementi nisu upotrebljivi bez atributa koji ih pobliže određuje, kao naprimjer element <b>a</b>. On
-                  označava link (hipervezu) te se nije funkcionalan ukoliko mu se ne dodijeli atribut, što je u ovom slučaju
-                  <b>href</b> gdje se upisuje putanja na koju vodi.</br>
-                  Također, element <b>img</b> mora imati izvor (atribut <b>src</b>) odakle povlači sliku.
+                  Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos temporibus. Ne has omnis harum. Ei mea graece delenit nominati. Ut dolore albucius torquatos vel, choro gubergren no mel.
                 </p>
-              </div>
 
-              <div class="widget">
-                <h6 class="widgetheading">Pojašnjenje:</h6>
-                <ol class="folio-detail">
-                  <li><a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank"><label>&lt;a href&#61;&ldquo;URL&rdquo;&gt;</label></a></li>
-                  <li><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank"><label>&lt;img src&#61;&ldquo;putanja slike&rdquo;&gt;</label></a></li>
-                </ol>
-              </div>
-
-
+              </div> -->
             </aside>
           </div>
         </div>
       </div>
     </section>
 
-<!-- 4. HTML DOM -->
-    <section id="content">
+	<!-- ČETVRTI ČLANAK-->
+
+	<section id="content">
       <div class="container">
         <div class="row">
           <div class="span8">
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3>4. HTML DOM (Document Object Model)</h3>
+                  <h3><a href="#">4. JavaScript tipovi podataka</a></h3>
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -486,27 +501,101 @@
               </div>
 
               <p>
-                Kada se web stranica učita, Internet preglednik kreira DOM (Document Object Model). HTML DOM definira standard za pristup
-                i manipulaciju HTML dokumentima. DOM definira objekte i svojstva svih dokumentiranih elemenata, kao i metode
-                kojima im se pritupa.
-                Jednostavnije rečeno - HTML DOM je standard za načine kako dohvatiti, promijeniti,
-                dodati ili obrisati HTML elemente.
-                Nešto više o DOM-u u niže navedenim izvorima:
+                Varijable mogu pohraniti podatke različitih vrsta, a različite vrste podataka mogu činiti različite stvari.
+<br>
+PHP podržava sljedeće vrste podataka:
+<ul>
+<li>String</li>
+<li>Boolean</li>
+<li>Number</li>
+<li>Object</li>
+<li>Array</li>
+<li>NULL i undefined</li>
+
+</ul>
+
+<br>
+<h4>String</h4>
+String je niz znakova, poput "Hello world!".
+
+String može biti bilo koji tekst unutar citata. Možete koristiti jednostruke ili dvostruke navodnike.
+<pre>
+var primjer = "tekst";
+var primjerDrugi = 'isto tekst';</pre>
+
+<br>
+<h4>Boolean</h4>
+Boolean predstavlja dva moguća stanja: TRUE ili FALSE.
+
+<pre>
+var primjer3 = true;
+var primjer4 = false;</pre>
+
+<br>
+<h4>Number (broj)</h4>
+Brojevi se koriste kao brojevni literali (doslovne vrijednosti). Nad brojevima koje je moguće koristiti moguće je vršiti matematičke operacije upotrebom aritmetičkih
+operatora (+, -, *, /, %, ++, --).<br>
+Kod JavaScript programskog jezika je zanimljivo to što se decimalni brojevi ne pišu sa zarezom, već sa točkom koja razdvaja cijeli broj i decimalu.
+<pre>
+var x1 = 3.00;     // decimalni broj
+var x2 = 34;       // cijeli broj</pre>
+<br>
+<h4>Object</h4>
+Objekt (engl. <i>object</i>) je entitet koji sadrži svojstva (engl. <i>properties</i>) i metode (engl. <i>methods</i>). Svojstva su opisne karakteristike objekta, a metode su moguće radnje koje objekt može izvest. <br>
+Na primjer, ako promatramo automobil, objekt iz stvarnog svijeta, u njegove karakteristike spadaju boja, marka, broj vrata i sl. U metode spadaju njegove mogućnosti kretanja naprijed, nazad, automatsko zaključavanje vrata i sl. <br>
+Svojstva objekta se mogu smatrati varijablama koje sadrže brojeve i tekst, a metode funkcijama. <br>
+Objekti su složeni podaci, za razliku od ostalih tipova podataka koji su ovdje spomenuti.
+
+<pre>
+  var automobil = {
+    marka: "Mercedes",
+    brojVrata: 5,
+    brojKilometara: 115.550,
+    boja: "plava"
+  };</pre>
+
+  <h4>Array</h4>
+  Array ili niz pohranjuje više vrijednosti u jednu jedinicu. Ako imate popis predmeta (na primjer popis imena automobila),
+  pohranjivanje automobila u jednu varijablu može izgledati ovako:
+
+  <pre>
+var auto1 = "Saab";
+var auto2 = "Volvo";
+var auto3 = "BMW";</pre>
+
+Međutim, što ako želite proći kroz automobile i pronaći određeni? A što ako niste imali 3 automobila, već 300?
+Rješenje je niz! Niz može sadržavati mnoge vrijednosti pod jednim nazivom, a vrijednostima možete pristupiti pozivanjem na indeksni broj.
+<pre>
+var automobili = ["Saab", "Volvo", "BMW"];</pre>
+
+<br>
+<h4>NULL</h4>
+Null je posebna vrsta podataka koja može imati samo jednu vrijednost: NULL.
+
+Promjenjiva vrsta podataka NULL je varijabla kojoj nije dodijeljena vrijednost.
+
+Savjet: Ako je varijabla stvorena bez vrijednosti, automatski joj se dodjeljuje vrijednost NULL.
+
+Varijable se također mogu isprazniti postavljanjem vrijednosti na NULL.
+
+Undefined tip podatka ima vrijednost indefined. Varijable koje su deklarirane, ali nisu još inicijalizirane imaju vrijednost <i>undefined</i>.
+
               </p>
 
             </article>
 
             <div class="row">
+
               <div class="grid related-works cs-style-3">
                 <div class="span2">
                   <div class="item">
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>What is DOM?</h3>
+                        <h3>JavaScript Data Types</h3>
                         <p>
-                          <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.w3.org/TR/REC-DOM-Level-1/introduction.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.w3schools.com/js/js_datatypes.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -517,10 +606,10 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>HTML DOM</h3>
+                        <h3>Data types</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://guide.freecodecamp.org/javascript/html-dom/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://javascript.info/types"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
@@ -531,535 +620,369 @@
                     <figure>
                       <div><img src="img/dummies/works/html.png" alt=""></div>
                       <figcaption>
-                        <h3>HTML DOM</h3>
+                        <h3>Data types (video)</h3>
                         <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.w3schools.com/jsref/dom_obj_document.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+
+                          <a href="https://www.youtube.com/watch?v=808eYu9B9Yw"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                <div class="span2">
-                  <div class="item">
-                    <figure>
-                      <div><img src="img/dummies/works/html.png" alt=""></div>
-                      <figcaption>
-                        <h3>HTML-CSS-DOM</h3>
-                        <p>
-                          <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                          <a href="https://www.youtube.com/watch?v=tSv2KIF7uE4" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
+
 
               </div>
             </div>
 
           </div>
 
+          <div class="span4">
+            <aside class="right-sidebar">
+              <div class="widget">
+
+
+
+              </div>
+           <!--   <div class="widget">
+                <h5 class="widgetheading">Text widget</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos temporibus. Ne has omnis harum. Ei mea graece delenit nominati. Ut dolore albucius torquatos vel, choro gubergren no mel.
+                </p>
+
+              </div> -->
+            </aside>
+          </div>
         </div>
       </div>
     </section>
 
-<!-- 5. Liste-->
-    <section id="content">
-          <div class="container">
+	<!-- PETI ČLANAK-->
+
+	<section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="span8">
+            <article class="noborder">
+              <div class="top-wrapper">
+                <div class="post-heading">
+                  <h3>5. JavaScript funkcije</h3>
+                </div>
+                <!-- start flexslider -->
+                <div class="portfolio-detail">
+                  <img src="img/works/full/image-01-full.jpg" alt="" />
+                </div>
+                <!-- end flexslider -->
+              </div>
+
+              <p>
+                JavaScript funkcija je blok koda dizajniran za izvođenje određenog zadatka. JavaScript funkcija se izvršava kada se "nešto" pozove na nju.
+ Funkcija je definirana ključnom riječi funkcije, a slijedi ime, a zatim zagrade (). Nazivi funkcija mogu sadržavati slova, znamenke, podvlake i znakove dolara (ista pravila kao i varijable).
+ Zagrade mogu sadržavati nazive parametara razdvojenih zarezima:
+ (parametar1, parametar2, ...) Kôd koji se izvršava, funkcijom, stavlja se u zavojite zagrade: {}
+
+ Parametri funkcija navedeni su unutar zagrada () u definiciji funkcije.
+ Argumenti funkcije su vrijednosti koje primi funkcija kad je pozvana. Unutar funkcije, argumenti (parametri) se ponašaju kao lokalne varijable.
+			   <pre>
+    function prva ()  {...}       // funkcija bez parametra
+
+    var x = mojaPrvaFunkcija(4, 3);
+    document.getElementById("demo").innerHTML = x;
+    function mojaPrvaFunkcija(a, b) {
+      return a * b;
+      }                            // funkcija sa parametrima</pre>
+
+    Ukoliko funkcija treba vratiti (izračunatu) vrijednost, koristi se naredba <i>return</i>, kao u primjeru iznad.
+
+              </p>
+
+            </article>
+
             <div class="row">
-              <div class="span8">
-                <article class="noborder">
-                  <div class="top-wrapper">
-                    <div class="post-heading">
-                      <h3>5. Liste</h3>
-                    </div>
-                    <!-- start flexslider -->
-                    <div class="portfolio-detail">
-                      <img src="img/works/full/image-01-full.jpg" alt="" />
-                    </div>
-                    <!-- end flexslider -->
+
+              <div class="grid related-works cs-style-3">
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>Functions in Javascript</h3>
+                        <p>
+
+                          <a href="https://www.geeksforgeeks.org/functions-in-javascript/"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
                   </div>
+                </div>
+                <div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>Functions</h3>
+                        <p>
 
-                  <p>
-                    Za urednost teksta, kao i pisanog na papiru te u Wordu, važno je imati organizirane i strukturirane liste i na web stranicama.
-                    Liste su uglavnom kratke, numerirane ili imaju točke za nabrajanje te osiguravaju da dijelovi teksta budu brzo i lako uočljivi od stranice
-                    čitaoca. HTML nudi više vrsta listi, ali se dvije izdvajaju kao najbitnije: numerirana lista te lista za nabrajanje. Numerirane liste se još
-                    nazivaju i uređene liste, dok s liste sa znakovima za nabrajanje (nenumerirane) nazivaju i neuređenim listama.
-                  </p>
+                          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+				<div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>JavaScript function Statement</h3>
+                        <p>
 
-                </article>
+                          <a href="https://www.w3schools.com/jsref/jsref_function.asp"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+				<div class="span2">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/html.png" alt=""></div>
+                      <figcaption>
+                        <h3>JavaScript Functions: video</h3>
+                        <p>
 
-                <div class="row">
-                  <div class="grid related-works cs-style-3">
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Lists</h3>
-                            <p>
-                              <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML - Lists</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://www.tutorialspoint.com/html/html_lists.htm" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>Lists</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://webplatform.github.io/docs/guides/html_lists/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-
+                          <a href="https://www.youtube.com/watch?v=N8ap4k_1QEQ"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                        </p>
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
 
-              </div>
 
 
-            </div>
-          </div>
-        </section>
-
-<!-- 6. Hiperveze-->
-    <section id="content">
-          <div class="container">
-            <div class="row">
-              <div class="span8">
-                <article class="noborder">
-                  <div class="top-wrapper">
-                    <div class="post-heading">
-                      <h3>6. Hiperveze</h3>
-                    </div>
-                    <!-- start flexslider -->
-                    <div class="portfolio-detail">
-                      <img src="img/works/full/image-01-full.jpg" alt="" />
-                    </div>
-                    <!-- end flexslider -->
-                  </div>
-
-                  <p>
-                    Hiperveza (URL) predstavlja skup instrukcija koje treba napraviti kako bi se izvršili zahtjevi određenog izvora.
-                    Sadrže određene adrese pomoću kojih se pronalaze dokumenti, videi, audio datoteke, tekstovi te objekti iz svih krajeva svijeta. Hiperveze dozvoljavaju
-                    da skačete a jedne na drugu stavku i da vidite izvore na toj adresu, pri čemu nije važno gdje se nalazite.
-                    Opći naziv za ove adrese je URL, odnosno engl. <i>Uniform Resource Locators</i>. Svaka web stranica na svijetu, svaki izvor na mreži, bilo da se radi o
-                    mješavini teksta i multimedije ili grafike, ima svoju jedinstvenu URL adresu, koja predstavlja strogo definiranu adresu pojedinog web izvora.<br>
-                    Element za hipervezu je <b>&lt;a&gt; &lt;/a&gt;</b> koji sadrži obavezni atribut <b>href</b>.<br><br>
-
-                    Upisivanje u alatu za uređivanje koda bi bilo sljedeće: <strong>&lt;a href&#61;&ldquo;www.DevStart.com&rdquo;&gt;<u>DevStart</u>&lt;/a&gt;</strong>
-
-                  </p>
-
-                </article>
-
-                <div class="row">
-                  <div class="grid related-works cs-style-3">
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Links</h3>
-                            <p>
-                              <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Links</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://marksheet.io/html-links.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>a href</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://html.com/attributes/a-href/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="span4">
-                <aside class="right-sidebar">
-
-                  <div class="widget">
-                    <h5 class="widgetheading">Dodatno:</h5>
-                    <p>Upoznati smo sa činjenicom da nije dobro ukoliko korisnik dođe na naš web te klikne na link koji ga odmah vodi na neku drugu web stranicu,
-                      dok mi ostajemo bez korisnika. Kako bi se to izbjeglo, moguće je dodati  <b>taget&#61;&ldquo;_blank&rdquo;</b> atribut i vrijednost i time
-                      usmjeriti web stranicu u novootvorenu karticu, bez zatvaranja našeg weba.
-                    </p>
-                  </div>
-
-                  <div class="widget">
-                    <h6 class="widgetheading">Vrste putanja/hiperveza:</h6>
-                    <ol class="folio-detail">
-                      <li><a href="https://www.youtube.com/watch?v=ephId3mYu9o" target="_blank"><label>Apsolutna i relativna putanja (YT video)</label></a></li>
-                      <li><a href="https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/" target="_blank"><label>Apsolutna vs. relativna putanja</label></a></li>
-                    </ol>
-                  </div>
-
-                </aside>
               </div>
             </div>
+
           </div>
-        </section>
 
-<!-- 7. Slike -->
+          <div class="span4">
+            <aside class="right-sidebar">
+              <div class="widget">
+
+
+
+              </div>
+           <!--   <div class="widget">
+                <h5 class="widgetheading">Text widget</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos temporibus. Ne has omnis harum. Ei mea graece delenit nominati. Ut dolore albucius torquatos vel, choro gubergren no mel.
+                </p>
+
+              </div> -->
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="content">
-          <div class="container">
-            <div class="row">
-              <div class="span8">
-                <article class="noborder">
-                  <div class="top-wrapper">
-                    <div class="post-heading">
-                      <h3>7. Slike</h3>
-                    </div>
-                    <!-- start flexslider -->
-                    <div class="portfolio-detail">
-                      <img src="img/works/full/image-01-full.jpg" alt="" />
-                    </div>
-                    <!-- end flexslider -->
+        <div class="container">
+          <div class="row">
+            <div class="span8">
+              <article class="noborder">
+                <div class="top-wrapper">
+                  <div class="post-heading">
+                    <h3>6. Petlje</h3>
                   </div>
-
-                  <p>
-                    Kako bismo dali uputu pregledniku da prikaže sliku, potrebno je osigurati dvije stvari. Prvo, potrebna je slika koju želimo prikazati, što se radi pomoću
-                    atributa <b>src</b> oznake <b>&lt;img&gt;</b>. Da bi se slika prikazala, vrijednost mora biti ispravna URL adresa, apsolutna ili relativna. Druga potrebna stvar jeste mjesto
-                    na web stranici gdje će slika biti smještena, što se također radi pomoću postavljanja elementa <b>&lt;img&gt;</b>.
-                  </p>
-                  <p>
-                    Oznaka <b>&lt;img&gt;</b> nije element nego vrijedi kao samostalna oznaka, što znači da nema krajnje crte, niti oznake koja zatvara za blok. Umjesto toga se koristi kosa
-                    crta na samom kraju te iste oznake:<br>
-
-                    <strong>&lt;img src&#61;&ldquo;URL ili putanja slike&rdquo; alt&#61;&ldquo;Naziv slike&rdquo;/&gt;</strong>
-                  </p>
-
-                </article>
-<!--
-                <div class="row">
-                  <div class="grid related-works cs-style-3">
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Attributes Explained</h3>
-                            <p>
-                              <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/html-attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML 4 Common Attributes</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="http://www.htmlhelp.com/reference/html40/attrs.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Attributes</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://html.com/attributes/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML attribute reference</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-
+                  <!-- start flexslider -->
+                  <div class="portfolio-detail">
+                    <img src="img/works/full/image-01-full.jpg" alt="" />
                   </div>
+                  <!-- end flexslider -->
                 </div>
--->
-              </div>
 
-              <div class="span4">
-                <aside class="right-sidebar">
+                <p>
+                  Petlje nude brz i jednostavan način da nešto ponovite. Izvršavanje koda u petlji se odvija kada se određeni kod ponavlja i izvrava sve dok traje
+                  ispunjenje određenog uvjeta. <br>
+                  Postoji više vrta petlji, ali sve one imaju svoju funkciju - da ponavljaju izvršavanje određenog bloka koda dokle god uvjet nije ispunjen. Čim dođe do
+                  ispunjavanja određenog uvjeta, petlja staje.
+                  <br> Petlje se dijele u dvije grupe:
+                  <ul>
+                    <li>one koje testiraju uvjet na početku svake iteracije - <i>for</i> i <i>while</i> petlja</li>
+                    <li>one koje testiraju uvjet na kraju iteracije - <i>do while</i> petlja</li>
+                  </ul>
+                </p>
+<br>
+                <h5>for</h5>
+                Najčešće korištena petlja u JavaScript-u je for-petlja. Evo primjera:
+<pre>
+  for(inicijalizacija brojača; uvjet brojanja; inkrement brojača) {
+      // neki kod koji se ponavlja
+    }
 
-                  <div class="widget">
-                    <h6 class="widgetheading">Vrste slika:</h6>
-                    <ol class="folio-detail">
-                      <li><a href="" target="_blank"><label>JPEG</label></a></li>
-                      <li><a href="" target="_blank"><label>GIF</label></a></li>
-                      <li><a href="" target="_blank"><label>PNG</label></a></li>
-                    </ol>
+
+  var suma = 0;
+  for (var i = 1; i <= 50; i++) {
+     suma = suma + i;
+  }
+  alert("Suma = " + suma);    // => Suma = 1275</pre>
+Sastoji se od tri dijela, razdvojenih zarezima. Prvi je inicijalizator (var i = 1) koji inicijalizira petlju i izvršava se samo jednom u startu. Drugi je uvjet
+ispitivanja (i <= 50). Kad se uvjetni izraz ocijeni istinitim, izvršava se tijelo petlje. Kada je lažno, petlja se prekida. Treći dio je inkrement (i ++)
+koji se poziva nakon svake iteracije. Inkrement obično povećava ili smanjuje brojač (dekrement) petlje.
+Sva tri dijela, tj. inicijalizator, stanje testa i inkrement se u jednoj petlji pišu zajedno u jednom retku (koji se zove iteracijska izjava),
+dok se s vremenom raštrkaju i leže na različitim mjestima.
+
+              <br><br><h5>while</h5>
+Ova petlja ne koristi brojač, već samo uvjet. Dokle god je uvjet točan izvršavati će se ponavaljanje. Kao i <i>for</i> petlja, i <i>while</i> petlja provjerava uvjet
+na početku iteracije. Oblik <i>while</i> petlje:
+
+<pre>
+  while (uvjet) {
+    // naredbe
+  }</pre>
+
+  Petlja se definira ključnom riječi <i>while</i>. U zagradi se navodi uvjet i u okviru vitičastih zagrada je blok koda koji pripada tijelu petlje. Nakon bloka
+  koda se ne piše zarez. Ovaj oblik petlje se koristi kada se ne zna koliko puta se petlja treba izvesti da se ponovi kod. Primjer petlje:
+  <pre>
+    var broj=0;
+    while (broj<4) {
+      console.log(broj);
+      broj++;
+    }</pre>
+
+U primjeru iznad, petlja će se ponavljati dokle god je varijabla "broj" manja od 4. Nakon svake iteracije varijabla se povećava za jedan, što znači da će se
+petlja izvršiti 4 puta.
+
+              <br><br><h5>do-while</h5>
+Ovaj oblik petlje je takav da se uvjet provjerava na kraju svake iteracije. Organizirana je slično kao i <i>while</i> petlja, a ono što je bitno je da će se za razliku od <i>for</i> i <i>while</i>
+petlje, ovaj kod izvršiti barem jednom. Njen oblik je:
+<pre>
+    do {
+      // naredbe
+    }while (uvjet);</pre>
+
+  Prvo se izvršava kod u <i>do</i> tijelu te se nakon toga provjerava <i>while</i> uvjet.
+              </article>
+
+              <div class="row">
+
+                <div class="grid related-works cs-style-3">
+                  <div class="span2">
+                    <div class="item">
+                      <figure>
+                        <div><img src="img/dummies/works/html.png" alt=""></div>
+                        <figcaption>
+                          <h3>Loops and interation</h3>
+                          <p>
+
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
                   </div>
-                </aside>
+                  <div class="span2">
+                    <div class="item">
+                      <figure>
+                        <div><img src="img/dummies/works/html.png" alt=""></div>
+                        <figcaption>
+                          <h3>For, While and Do While LOOP in JavaScript</h3>
+                          <p>
+
+                            <a href="https://www.guru99.com/how-to-use-loops-in-javascript.html"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+  				<div class="span2">
+                    <div class="item">
+                      <figure>
+                        <div><img src="img/dummies/works/html.png" alt=""></div>
+                        <figcaption>
+                          <h3>Loops</h3>
+                          <p>
+
+                            <a href="https://www.learn-js.org/en/Loops"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+  				<div class="span2">
+                    <div class="item">
+                      <figure>
+                        <div><img src="img/dummies/works/html.png" alt=""></div>
+                        <figcaption>
+                          <h3>Javascript loops: video</h3>
+                          <p>
+
+                            <a href="https://www.youtube.com/watch?v=s9wW2PpJsmQ"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+
+
+                </div>
               </div>
+
+            </div>
+
+            <div class="span4">
+              <aside class="right-sidebar">
+                <div class="widget">
+
+
+
+                </div>
+             <!--   <div class="widget">
+                  <h5 class="widgetheading">Text widget</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos temporibus. Ne has omnis harum. Ei mea graece delenit nominati. Ut dolore albucius torquatos vel, choro gubergren no mel.
+                  </p>
+
+                </div> -->
+              </aside>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-<!-- 8. Tablice -->
-    <section id="content">
-          <div class="container">
-            <div class="row">
-              <div class="span8">
-                <article class="noborder">
-                  <div class="top-wrapper">
-                    <div class="post-heading">
-                      <h3>8. Tablice</h3>
-                    </div>
-                    <!-- start flexslider -->
-                    <div class="portfolio-detail">
-                      <img src="img/works/full/image-01-full.jpg" alt="" />
-                    </div>
-                    <!-- end flexslider -->
-                  </div>
 
-                  <p>
-                    HTML tablice izrađuju se pomoću oznaka koje formiraju redove i ćelije. Specifične ćelije mogu se prostirati i u redovima i u stupcima te tako
-                    kreirati veće dijelove prostora.<br>
-                    Osnovni element tablice je <b>&lt;table&gt;</b> koji daje uputu pregledniku da slijede elementi za redove i stupce. Nadalje dolaze redovi sa elemetom
-                    <b>&lt;tr&gt;</b>. Svaki red HTML tablice sadrži niz horizontalnih ćelija sa podacima u kojima se nalaze podaci. Ćelije se označavaju sa elementom <b>&lt;td&gt;</b>.
-                  </p>
 
-                </article>
-<!--
-                <div class="row">
-                  <div class="grid related-works cs-style-3">
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Attributes Explained</h3>
-                            <p>
-                              <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/html-attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML 4 Common Attributes</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="http://www.htmlhelp.com/reference/html40/attrs.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML Attributes</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://html.com/attributes/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="span2">
-                      <div class="item">
-                        <figure>
-                          <div><img src="img/dummies/works/html.png" alt=""></div>
-                          <figcaption>
-                            <h3>HTML attribute reference</h3>
-                            <p>
-                              <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
 
-                  </div>
-                </div>
--->
-              </div>
-
-              <div class="span4">
-                <aside class="right-sidebar">
-
-                  <div class="widget">
-                    <h5 class="widgetheading">Hijerarhija tablice</h5>
-                    <p>
-                      Hijerarhija elemenata je označena elementom <b>&lt;table&gt;...&lt;/table&gt;</b>, koji sadrži sve ostale elemente tablice. Element za redove tablice
-                      (<b>&lt;tr&gt;...&lt;tr&gt;</b>) dolazi unutar <b>table</b> elementa, a unutar njega upisujemo ćelije s podacima (<b>&lt;td&gt;...&lt;/td&gt;</b>).
-                    </p>
-                  </div>
-
-                </aside>
-              </div>
-            </div>
-          </div>
-        </section>
-
-<!-- 9. Izvori -->
-    <section id="content">
-              <div class="container">
-                <div class="row">
-                  <div class="span8">
-                    <article class="noborder">
-                      <div class="top-wrapper">
-                        <div class="post-heading">
-                          <h3>Izvori</h3>
-                        </div>
-                        <!-- start flexslider -->
-                        <div class="portfolio-detail">
-                          <img src="img/works/full/image-01-full.jpg" alt="" />
-                        </div>
-                        <!-- end flexslider -->
-                      </div>
-
-                      <p>
-                        Lekcije napisane iznad su tek uvod u osnovne funkcije HTML te šturi prikaz onoga što HTML uistinu može. Kako naučiti HTML?
-                        Kao i sve - vježbanjem! Učenje teorije je veoma potrebno, ali ne i ključno u savladavanju tehnike korištenja HTML-om. Iz tog razloga, ovdje je navedeno nekoliko izvora
-                        koji imaju potpune (i besplatne) tutorijale sa naglaskom na kodiranje, a ne čitanje! <br>
-                        <strong>Sretno!!</strong>
-
-                        <ol class="folio-detail">
-                          <li><a href="https://dash.generalassemb.ly/" target="_blank"><label>Dash</label></a></li>
-                          <li><a href="https://www.lynda.com/" target="_blank"><label>Lynda</label></a></li>
-                          <li><a href="https://www.websitebuilderexpert.com/building-websites/coding-for-beginners/" target="_blank"><label>WebSiteBuilderExpert</label></a></li>
-                          <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank"><label>CodeCademy</label></a></li>
-                        </ol>
-                      </p>
-
-                    </article>
-
-                  </div>
-
-                </div>
-              </div>
-            </section>
 
 
     <footer>
-      <!--
       <div class="container">
-
         <div class="row">
-
           <div class="span4">
             <div class="widget">
               <div class="footer_logo">
-                <h3><a href="index.html">DevStart</a></h3>
+                <h3><a href="index.html"><i class="icon-tint"></i> Iveniv</a></h3>
               </div>
               <address>
-							  <strong>Remember company Inc.</strong><br>
-  							Somestreet KW 101, Park Village W.01<br>
-  							Jakarta 13426 Indonesia
+
   						</address>
               <p>
-                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-                <i class="icon-envelope-alt"></i> email@domainname.com
+
+                <i class="icon-envelope-alt"></i> eeskic@ffos.hr<br>
+				<i class="icon-envelope-alt"></i> ipalko@ffos.hr<br>
+				<i class="icon-envelope-alt"></i> icosic1@ffos.hr<br>
               </p>
-            </div>
-          </div>
-
-          <div class="span4">
-            <div class="widget">
-              <h5 class="widgetheading">Browse pages</h5>
-              <ul class="link-list">
-                <li><a href="#">Our company</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Press release</a></li>
-                <li><a href="#">What we have done</a></li>
-                <li><a href="#">Our support forum</a></li>
-              </ul>
-
             </div>
           </div>
 
 
         </div>
-
       </div>
-      -->
       <div id="sub-footer">
         <div class="container">
           <div class="row">
             <div class="span6">
               <div class="copyright">
-                <p><span>&copy; Remember Inc. All right reserved</span></p>
+                <p><span>&copy; Iveniv. All right reserved</span></p>
               </div>
 
             </div>
@@ -1072,14 +995,14 @@
                   Licensing information: https://bootstrapmade.com/license/
                   Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Remember
                 -->
-                Created by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Created by <a href="https://bootstrapmade.com/">Bootstrap</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-
+  </div>
   <a href="#" class="scrollup"><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i></a>
 
   <!-- javascript
