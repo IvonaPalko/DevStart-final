@@ -336,7 +336,7 @@
                 <ol class="folio-detail">
                   <li><label>ID selektor</label></li> - dodavanje identifikatora pojedinim elementima te kasnije CSS označavanje
                   <li><label>Selektor klase</label></li> - dodavanje klase elementima i CSS označavanje
-                  <li><label>Univerzalni selektor</label></li> - oznaka <b>*</b> - stilizira cijelu stranicu (npr. pozadina)
+                  <li><label>Univerzalni selektor</label></li> - simbol <b>*</b> - stilizira cijelu stranicu (npr. pozadina)
                   <li><label>Grupirajući selektor</label></li> - okupljanje više elemenata za koje se vrši ista stilizacija
                 </ol>
               </p>
@@ -389,7 +389,8 @@
             <article class="noborder">
               <div class="top-wrapper">
                 <div class="post-heading">
-                  <h3>4. CSS oznake</h3>
+                  <h3>4. CSS svojstva</h3>
+
                 </div>
                 <!-- start flexslider -->
                 <div class="portfolio-detail">
@@ -399,8 +400,8 @@
               </div>
 
               <p>
-                Kako ne bismo prolazili kroz sve CSS oznake jer ih je veoma mnogo, a jednom kada počnete raditi s njima postati će vam vrlo znane, ovdje ćemo
-                priložiti tek izvore sa popisom oznaka i potencijalnih vrijednosti.
+                Kako ne bismo prolazili kroz sva CSS svojstva jer ih je veoma mnogo, a jednom kada počnete raditi s njima postati će vam vrlo znane, ovdje ćemo
+                priložiti tek izvore sa popisom svojstava i potencijalnih vrijednosti.
               </p>
 
             </article>
@@ -477,19 +478,21 @@
                   </div>
 
                   <p>
-                    CSS boje se definiraju pomoću modela za opis boja RGB (engl. <i>Red, Green, Blue</i>), heksadecimalnog sistema ili po imenu (na engleskom).
+                    CSS boje se definiraju pomoću modela za opis boja RGB (engl. <i>Red, Green, Blue</i>), heksadecimalnog sistema ili po imenu (na engleskom).<br>
+                    U ovom primjeru ćemo raditi s bojom <b>fuksija</b>. Fuksija je kao boja kombinacija crvene i plave boje, u ravnomjernom omjeru.
+                    Također, kreiranje boja u ovim oblicima je apsolutno logično:
                   </p>
                   <p>
                     <strong>RGB</strong><br>
                     Postoje dva načina rada sa RGB modelom:<br>
                     <pre>
     Prvi način je upisivanje postotka crvene, zelene i plave
-    color: rgb (39%, 58%, 93%);
+    color: rgb (100%, 0%, 100%);
     a drugi način je direktno definiranje RGB vrijednosti boja
-    color: rgb (100, 149, 237);</pre>
+    color: rgb(255,0,255);</pre>
                     <strong>Heksadecimalni sistem</strong><br>
                     <pre>
-    color: #6495ED;</pre>
+    color: #FF00FF;</pre>
                     <strong>Korištenje imena boje</strong><br>
                     <pre>
     color: cornflowerblue;</pre>
@@ -712,7 +715,7 @@
                   </p>
                   <p>
                     Interna udaljenost elemenata, tj. razmak između sadržaja elementa i njegovih rubova postavlja se pomoću CCS svojstva <b>padding</b>. Kako biste postavili
-                    udaljenost od rubova, potrebno je da se definira gornji, donji, lijevi i desni razmak u vidu izdvojenih deklaracija:
+                    udaljenost od rubova, potrebno je definirati gornji, donji, lijevi i desni razmak u vidu izdvojenih deklaracija:
                     <pre>
       p {
         padding-top: 2px;       definira udaljenost od gornjeg ruba elementa
@@ -745,6 +748,22 @@
       p {margin: 2px 3px 3px 4px;}</pre>
 
                   </p>
+                  <p>
+                    Posljednja stavka u box modelu je <b>border</b>, a on se nalazi između prostora koji rješavamo paddingom i prostora margina. Border se, kao i prijašnja
+                    dva svojstva, označava sa sve četiri strane.
+                    <pre>
+      p {
+        border-top: 2px;       definira gornji obrub elementa
+        border-bottom: 3px;    definira donji obrub elementa
+        border-left: 3px;      definira lijevi obrub elementa
+        border-right: 4px;     definira desni obrub elementa
+      }
+
+      ili kroz pojedinačnu deklaraciju:
+
+      p {border: 2px 3px 3px 4px;}</pre>
+
+                  </p>
 
                 </article>
 
@@ -755,10 +774,10 @@
                         <figure>
                           <div><img src="img/dummies/works/html.png" alt=""></div>
                           <figcaption>
-                            <h3>HTML Attributes Explained</h3>
+                            <h3>CSS Padding</h3>
                             <p>
                               <a href="img/dummies/works/html.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/html-attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                              <a href="https://www.w3schools.com/css/css_padding.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                             </p>
                           </figcaption>
                         </figure>
@@ -769,10 +788,10 @@
                         <figure>
                           <div><img src="img/dummies/works/html.png" alt=""></div>
                           <figcaption>
-                            <h3>HTML 4 Common Attributes</h3>
+                            <h3>CSS odmaci</h3>
                             <p>
                               <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="http://www.htmlhelp.com/reference/html40/attrs.html" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                              <a href="https://www.mojwebdizajn.net/skriptni-jezici/vodic/css/css-padding.aspx" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                             </p>
                           </figcaption>
                         </figure>
@@ -783,10 +802,10 @@
                         <figure>
                           <div><img src="img/dummies/works/html.png" alt=""></div>
                           <figcaption>
-                            <h3>HTML Attributes</h3>
+                            <h3>CSS Margins</h3>
                             <p>
                               <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://html.com/attributes/" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                              <a href="https://www.w3schools.com/css/css_margin.asp" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                             </p>
                           </figcaption>
                         </figure>
@@ -797,15 +816,16 @@
                         <figure>
                           <div><img src="img/dummies/works/html.png" alt=""></div>
                           <figcaption>
-                            <h3>HTML attribute reference</h3>
+                            <h3>CSS margine</h3>
                             <p>
                               <a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="HTML Introduction - w3schools"></a>
-                              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
+                              <a href="https://www.mojwebdizajn.net/skriptni-jezici/vodic/css/css-margin.aspx" target="_blank"><i class="icon-file icon-circled icon-bglight icon-2x active"></i></a>
                             </p>
                           </figcaption>
                         </figure>
                       </div>
                     </div>
+
 
                   </div>
                 </div>
@@ -850,16 +870,17 @@
 
           <pre>
  float      definira element koji se treba postaviti sa jedne ili druge strane svih ostalih elemenata
- Left       definira element koji pluta sa lijeve strane ostalih elemenata
- Right      definira element koji pluta sa desne strane ostalih elemenata
- None       definira element koji ne pluta
- Inherit    definira element koji je naslijedio vrijednost plutanja od njemu nadređenog elementa
+ - Left       definira element koji pluta sa lijeve strane ostalih elemenata
+ - Right      definira element koji pluta sa desne strane ostalih elemenata
+ - None       definira element koji ne pluta
+ - Inherit    definira element koji je naslijedio vrijednost plutanja od njemu nadređenog elementa
+
  clear      definira jednu ili dvije strane u koje se ne mogu postaviti plutajući elementi
- Both       definira plutajuće elemente koji ne mogu plutati nalijevo ili nadesno od nekog elementa
- left       definira da niti jedan element ne može plutati lijevo od nekog elementa
- right      definira da niti jedan element ne može plutati desno od nekog elementa
- none       dozvoljava elementima da plutaju lijevo, desno ili sa obje strane nekog elementa
- inherit    definira element bloka koji nasljeđuje samo vrijednost naređenog u kome je sadržan</pre>
+ - Both       definira plutajuće elemente koji ne mogu plutati nalijevo ili nadesno od nekog elementa
+ - left       definira da niti jedan element ne može plutati lijevo od nekog elementa
+ - right      definira da niti jedan element ne može plutati desno od nekog elementa
+ - none       dozvoljava elementima da plutaju lijevo, desno ili sa obje strane nekog elementa
+ - inherit    definira element bloka koji nasljeđuje samo vrijednost naređenog u kome je sadržan</pre>
 
 
                 </article>
@@ -928,15 +949,6 @@
 
               <div class="span4">
                 <aside class="right-sidebar">
-
-                  <div class="widget">
-                    <h5 class="widgetheading">smth</h5>
-                    <p>
-
-
-
-                    </p>
-                  </div>
 
                   <div class="widget">
                     <h6 class="widgetheading">Postoji još i :</h6>
